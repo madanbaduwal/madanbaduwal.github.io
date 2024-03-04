@@ -114,13 +114,13 @@
       "icon": "fa-solid fa-hashtag",
       "highlights": ["Research on Multimodal learning"],
       "keywords": [
-        "Languages:  Python3, C, C++, Java, JavaScript,C#, Go ,CUDA,  CMake, Git,  Bash, LaTeX, HTML/CSS, SQL",
+        "Languages:  Python3, C, C++, Java, JavaScript,C#, Go ,CUDA,  CMake,  Bash, LaTeX, HTML/CSS, SQL",
         "Python Packages : Numpy, Theano, Pandas, Matplotlib, Seaborn, Scikit-learn, XGBoost, Pytorch, Tensorflow, Hugging Face, Mlflow, Caffe, Opencv, NLTK, Scipy, Regex, BeautifulSoup, TVM, GLOW, XLA",
         "Big Data and Databases : PostgreSQL, MySQL, MongoDB, Snowflake, Spark, Hadoop, Redshift, Databrick, Kafka,  Tableau, ETL",
         "Frameworks: Django, Fastapi, Flask, React Native, Node.js, React, ANgular, Spring Framework",
         "Servers: AWS, Microservices,Dell EMC, ",
         "Robotics: Robot Operating System(ROS), Gazebo, Arduino, R.pi, C.TPU, J.Nano",
-        "Miscellaneous : "
+        "Miscellaneous : Jupyter Notebook, Linux, Git, Github, Docker, Kubernetes, CI/CD,Jenkins"
       ]
     }
   ],
@@ -132,6 +132,16 @@
       "startDate": "2023-03-16",
       "endDate": "ONG.",
       "highlights": ["Assisting in the editing and proofreading of manuscripts for publication under the direction of Prof.Rebecca Babcock and Prof.Mohamed K Zobaa."]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Quantum Computing",
+      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
+      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
+      "startDate": "2018-01-01",
+      "endDate": "2018-01-01",
+      "url": "https://example.com"
     }
   ],
   "awards": [
@@ -223,16 +233,6 @@
       "name": "Professor John Doe",
       "icon": "fa-solid fa-thumbtack",
       "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    }
-  ],
-  "projects": [
-    {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
     }
   ]
 }
