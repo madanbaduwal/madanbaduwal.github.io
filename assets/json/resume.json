@@ -6,7 +6,7 @@
     "email": "madanbaduwal100@gmail.com",
     "phone": "(432) 3161183",
     "url": "https://madanbaduwal.github.io",
-    "summary": "Machine learning engineer with 4+ years of experience in data engineering, data science, machine learning, deeplearning, computer vision, natural language processing, generative AI, software engineering, and robotics. Key achievement: created a student status engine (i.e. FuseClassroom) for 60 colleges and 20k students in Nepal.",
+    "summary": "Machine learning engineer with 4+ years of experience in AI and Software Engineering.",
     "location": {
       "address": "2712 Broadway St",
       "postalCode": "CA 94115",
@@ -53,7 +53,7 @@
       "url": "https://matrice.ai/",
       "startDate": "2022-11-01",
       "endDate": "2023-02-30",
-      "highlights": ["Designed and developed a no-code data-centric AI platform for building and deploying ML applications. Which reduces the deployment time by 40% while cutting the development cost by 80%."]
+      "highlights": ["Designed and developed a no-code data-centric AI platform for building and deploying ML apps, reducing user deployment time by 40% and development costs by 80% using Pytorch, React, Django, and AWS technologies."]
     },
     {
       "name": "BP Eye Foundation",
@@ -61,7 +61,7 @@
       "url": "https://www.bpeyefoundation.org/",
       "startDate": "2022-05-01",
       "endDate": "2022-11-30",
-      "highlights": ["Optimized semantic segmentation and detection algorithms for otitis media based on otoscopy images of the tympanic membrane with an accuracy of 85% and deployed it as a scalable ML SAAS product on the Dell EMC server using the latest technologies of Django, React, Docker, Kubernetes, AWS, and CI/CD pipelines."]
+      "highlights": ["Optimized and automated semantic segmentation and detection (accuracy: 85%) for otitis media Otoscopy images of the tympanic membrane, driving $100k of revenue annually by increasing the doctor-patient ratio by 1.5x.", "Deployed the app as a SaaS product, using technologies such as Pytorch, Django, Dell EMC servers, and CI/CD"]
     },
     {
       "name": "Fusemachines",
@@ -69,7 +69,7 @@
       "url": "https://fusemachines.com/",
       "startDate": "2020-02-01",
       "endDate": "2022-02-30",
-      "highlights": ["Led a team of engineers to develop an AI-enabled education platform: fuseclassroom.com, this platform was running around 60 colleges in Nepal, and 20k students are already engaged in this platform.","Worked on several client-based ML projects from the US as well as internal ML projects of the company in the field of Machine learning and automated and optimized these projects using MLOPS technologies DVC, MLflow, Github, Jenkins, Kubeflow, Apache Airflow, and Datadog.","• Involved in in-house training, workshops, math knowledge-sharing sessions, and paper reading sessions on deep learning.","Democratized AI by doing research, design, review, and refinement of content - reading material, quizzes, assignments, and projects for Fusemachines AI Education Programs - ”Micro Degree in Artificial Intelligence, Machine Learning, Computer Vision, Natural Language Processing”"]
+      "highlights": ["Led a 10-person team to develop an AI-enabled student progress tracking platform (fuseclassroom.com), doubling the teacher-student ratio to 1:30. Currently operational in ∼60 Nepalese colleges with 20k active students.", "Orchestrated a phishing detection engine for over 10 clients under WMC Global, improving accuracy from 85% to 90% by selecting the optimal number of clusters using the silhouette score, detecting millions of URLs per day.", "Automated workflow with MLOps tools: Docker, Kubernetes, GitHub, Jenkins, Apache Airflow, and Datadog.", "Conducted over 20+ trainings, workshops, knowledge-sharing, and paper reading sessions on mathematics and machine learning. Empowered ML skills of ∼5k students by collaborating with schools, colleges, and universities.", "Enriched AI affordable courses by researching, designing, reviewing, and refining content, including reading material, quizzes, assignments, and projects for Fusemachines AI Education Programs, specifically focusing on the ”Micro Degree in Artificial Intelligence, Machine Learning, Computer Vision, and Natural Language Processing.”"]
     },
     {
       "name": "National Innovation Center",
@@ -77,7 +77,7 @@
       "url": "https://nicnepal.org/",
       "startDate": "2021-01-01",
       "endDate": "2021-12-30",
-      "highlights": ["Collaborated with mechanical, electrical, and electronic hardware teams for the deployment of computer vision(CV) tasks in robots to create initial prototypes for waiter and service robots within 9 months.","Run simulation tests on docker and Gazebo, Integrated and deployed CV tasks in robots with Edge Devices like Tensor Processing Units and Jetson Nano, RaspberryPI.","• Created a few rule base algorithms from scratch using python3 to handle the motion and manipulation of the robot.","Implemented several CV tasks: classification, Localization, Segmentation, Object Detection, Object Tracking, and Face Recognition using Pytorch. Worked on the whole computer vision pipeline."]
+      "highlights": ["Led & collaborated with mechanical, electrical, and electronic hardware teams to deploy computer vision tasks in robots, resulting in the creation of initial prototypes for waiter and service robots within a span of 9 months.", "Achieved 60% inference acceleration on computer vision tasks integrating into robots using quantization techniques and hardware-software accelerators like Google Coral TPU, NVIDIA J.Nano, Raspberry Pi., and Microsoft Azure.", "Implemented and fine-tuned computer vision tasks, including object detection, segmentation, tracking, face recog-nition, and depth estimation, using PyTorch and the Intel depth camera D435i, covering the entire vision pipeline.", "Improved pathfinding algorithms (A* and Dijkstra), leading to a 20% reduction in execution time and faster NAV."]
     },
     {
       "name": "Omnibluetech",
@@ -85,7 +85,7 @@
       "url": "https://omnibluetech.com/",
       "startDate": "2019-1-01",
       "endDate": "2020-02-30",
-      "highlights": ["Coded Django REST APIs and AWS-based background workers that can handle millions of daily requests, enabling third-party entities to extract data from unstructured documents in a scalable manner.","Designed and developed web applications using Front-end technologies HTML5, CSS, Bootstrap, Javascript, and backend technologies Flask, Django, and WordPress."]
+      "highlights": ["Designed and developed Django REST APIs and AWS-based background workers capable of managing millions of daily requests, facilitating third-party entities in extracting data from unstructured documents in a scalable fashion.", "Implemented web applications using front-end and back-end technologies: HTML5, CSS, Javascript, and Django for retail stores and consultancies, resulting in a 15% increase in revenue for the company in the first quarter."]
     }
   ],
   "research": [
@@ -95,7 +95,7 @@
       "url": "https://www.utpb.edu/",
       "startDate": "2024-01-16",
       "endDate": "Ong.",
-      "highlights": ["Research on Multimodal learning"]
+      "highlights": ["Research on multimodal learning chatbots"]
     }
   ],
   "publications": [
@@ -132,6 +132,14 @@
       "startDate": "2023-03-16",
       "endDate": "ONG.",
       "highlights": ["Assisting in the editing and proofreading of manuscripts for publication under the direction of Prof.Rebecca Babcock and Prof.Mohamed K Zobaa."]
+    },
+    {
+      "organization": "University Of Texas Permian Basin",
+      "position": "Orientation Team Leader",
+      "url": "https://www.utpb.edu/",
+      "startDate": "2023-03-16",
+      "endDate": "2023-09-30",
+      "highlights": ["Successfully led a team of orientation volunteers to ensure smooth execution of university orientation programs, demonstrating strong leadership skills and ability to delegate tasks effectively."]
     }
   ],
   "projects": [
@@ -155,11 +163,11 @@
   ],
   "certificates": [
     {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
+      "name": "Neural Networks and Deep Learning",
+      "date": "2020-01-14",
+      "issuer": "Coursera",
+      "url": "https://www.coursera.org/account/accomplishments/certificate/CW3FA627EM2S",
+      "icon": "fa-solid fa-coursera"
     },
     {
       "name": "Quantum Computing",
