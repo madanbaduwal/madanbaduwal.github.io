@@ -3,6 +3,8 @@ layout: about
 title: about
 permalink: /
 subtitle: 🇳🇵(He/Him)
+importance: 2
+
 
 profile:
   align: right

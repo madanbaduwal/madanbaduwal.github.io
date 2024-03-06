@@ -1,9 +1,9 @@
-<!-- ---
+---
 layout: page
-title: submenue
+title: meeting
 nav: true
 nav_order: 8
-dropdown: true
+# dropdown: true
 children:
   - title: publications
     permalink: /publications/
@@ -21,4 +21,4 @@ Free free to sign up below if you would like to chat with me on any topics.</p>
 <!-- Calendly inline widget begin -->
 <div class="calendly-inline-widget" data-url="https://calendly.com/madanbaduwal/computer-vision-lab" style="min-width:320px;height:630px; padding-left: 0px;"></div>
 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-Calendly inline widget end -->
+<!-- Calendly inline widget end -->

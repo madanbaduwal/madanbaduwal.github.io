@@ -3,9 +3,8 @@ layout: page
 title: AstroidSmash
 description: ✨ AstroidSmash is a mini captivating 2D Android game where your objective is to expand the central asteroid's size by safeguarding it against collisions with other asteroids, thereby earning higher scores.
 img: assets/img/AstroidSmash.jpg
-importance: 1
-category: work
-related_publications: true
+importance: 2
+category: project
 ---
 
 AstroidSmash is a mini captivating 2D game developed using the Unity game engine, centered around the theme of the universe. In this immersive experience, players are tasked with defending our planet from various threats, including a supernova, incoming asteroids, and an alien invasion.

@@ -61,7 +61,7 @@
       "url": "https://www.bpeyefoundation.org/",
       "startDate": "2022-05-01",
       "endDate": "2022-11-30",
-      "highlights": ["Optimized and automated semantic segmentation and detection (accuracy: 85%) for otitis media Otoscopy images of the tympanic membrane, driving $100k of revenue annually by increasing the doctor-patient ratio by 1.5x.", "Deployed the app as a SaaS product, using technologies such as Pytorch, Django, Dell EMC servers, and CI/CD"]
+      "highlights": ["Optimized and automated semantic segmentation and detection (accuracy: 85%) for otitis media Otoscopy images of the tympanic membrane, driving $100k of revenue annually by increasing the doctor-patient ratio by 1.5x.", "Deployed the app as a SaaS product for 5+ hospitals, leveraging Pytorch, Django, Dell EMC servers, and CI/CD."]
     },
     {
       "name": "Fusemachines",
@@ -69,7 +69,7 @@
       "url": "https://fusemachines.com/",
       "startDate": "2020-02-01",
       "endDate": "2022-02-30",
-      "highlights": ["Led a 10-person team to develop an AI-enabled student progress tracking platform (fuseclassroom.com), doubling the teacher-student ratio to 1:30. Currently operational in ∼60 Nepalese colleges with 20k active students.", "Orchestrated a phishing detection engine for over 10 clients under WMC Global, improving accuracy from 85% to 90% by selecting the optimal number of clusters using the silhouette score, detecting millions of URLs per day.", "Automated workflow with MLOps tools: Docker, Kubernetes, GitHub, Jenkins, Apache Airflow, and Datadog.", "Conducted over 20+ trainings, workshops, knowledge-sharing, and paper reading sessions on mathematics and machine learning. Empowered ML skills of ∼5k students by collaborating with schools, colleges, and universities.", "Enriched AI affordable courses by researching, designing, reviewing, and refining content, including reading material, quizzes, assignments, and projects for Fusemachines AI Education Programs, specifically focusing on the ”Micro Degree in Artificial Intelligence, Machine Learning, Computer Vision, and Natural Language Processing.”"]
+      "highlights": ["Led a 10-person team to develop an AI-enabled student progress tracking platform (fuseclassroom.com), doubling the teacher-student ratio to 1:30. Currently operational in ∼60 Nepalese colleges with 20k active students.", "Orchestrated a phishing detection engine for over 10 clients under WMC Global, improving accuracy from 85% to 90% by selecting the optimal number of clusters using the silhouette score, detecting millions of URLs per day. Automated their workflow with MLOps tools: Docker, Kubernetes, GitHub, Jenkins, Apache Airflow, and Datadog.", "Conducted over 20+ trainings, workshops, knowledge-sharing, and paper reading sessions on mathematics and machine learning. Empowered ML skills of ∼5k students by collaborating with schools, colleges, and universities.", "Enriched AI affordable courses by researching, designing, reviewing, and refining content, including reading material, quizzes, assignments, and projects for Fusemachines AI Education Programs, specifically focusing on the ”Micro Degree in Artificial Intelligence, Machine Learning, Computer Vision, and Natural Language Processing.”"]
     },
     {
       "name": "National Innovation Center",
@@ -131,7 +131,7 @@
       "url": "https://www.utpb.edu/",
       "startDate": "2023-03-16",
       "endDate": "ONG.",
-      "highlights": ["Assisting in the editing and proofreading of manuscripts for publication under the direction of Prof.Rebecca Babcock and Prof.Mohamed K Zobaa."]
+      "highlights": ["Assisting in the editing and proofreading of the UTPB Journal of Undergraduate Research, Volume 5, 2023, and UG Research Book 2024 for publication under the direction of Prof.Rebecca Babcock and Prof.Mohamed K Zobaa."]
     },
     {
       "organization": "University Of Texas Permian Basin",
@@ -154,11 +154,39 @@
   ],
   "awards": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+      "title": "Graduate Assistant",
+      "date": "1924-11-01",
+      "awarder": "University Of Texas Permian Basin",
+      "url": "https://www.utpb.edu/",
+      "summary": "Graduate assistantships scholarship( ̃$5,000)"
+    },
+    {
+      "title": "Merit-based scholarship",
+      "date": "2014-11-01",
+      "awarder": "Tribhuvan University",
+      "url": "https://tu.edu.np/",
+      "summary": "$4,000 worth scholarship awarded for securing the highest GPA in the Computer Engineering cohort (3/7 semesters)."
+    },
+    {
+      "title": "Hackathon Runner-up",
+      "date": "2018-03-01",
+      "awarder": "Kathmandu University ",
+      "url": "https://github.com/madanbaduwal/madanbaduwal-old.github.io/blob/main/assets/Documents/Awards/Sagarmatha-technofest.jpg",
+      "summary": "1st runner-up of hackathon organizes by Kathmandu University, kavre.The prize was worth $1,000."
+    },
+    {
+      "title": "Best Logic Code",
+      "date": "2019-07-01",
+      "awarder": "Sagarmatha Engineering College",
+      "url": "https://github.com/madanbaduwal/madanbaduwal-old.github.io/blob/main/assets/Documents/Awards/Sagarmatha-technofest.jpg",
+      "summary": "Best Logic Code winner organized by Sagarmatha engineering college.The prize was worth $600."
+    },
+    {
+      "title": "Best Idea Winner",
+      "date": "2017-01-01",
+      "awarder": "antipur engineering college ",
+      "url": "https://github.com/madanbaduwal/madanbaduwal-old.github.io/blob/main/assets/Documents/Awards/Sagarmatha-technofest.jpg",
+      "summary": "Best idea winner of the Exhibition organized by Kantipur engineering college and sponsored by Neosphere. Neosphere offered 6 month Ethical Hacking course, which was nearly worth $ 200"
     }
   ],
   "certificates": [
@@ -167,28 +195,28 @@
       "date": "2020-01-14",
       "issuer": "Coursera",
       "url": "https://www.coursera.org/account/accomplishments/certificate/CW3FA627EM2S",
-      "icon": "fa-solid fa-coursera"
+      "icon": "fa-solid fa-book"
     },
     {
       "name": "Certified Ethical Hacking(CEH)",
       "date": "2019-08-01",
       "issuer": "Neosphere",
       "url": "https://raw.githubusercontent.com/madanbaduwal/madanbaduwal-old.github.io/main/assets/Documents/Certification/Certificialethicalhacking.jpg",
-      "icon": "fa-solid fa-tag"
+      "icon": "fa-solid fa-book"
     },
     {
       "name": "Sequence Models",
       "date": "2020-02-01",
       "issuer": "Coursera",
       "url": "https://www.coursera.org/account/accomplishments/certificate/38G82ZYNDA4C",
-      "icon": "fa-solid fa-envelope"
+      "icon": "fa-solid fa-book"
     },
     {
       "name": "Effective Client Communication",
       "date": "2020-06-01",
       "issuer": "Fusemachines",
       "url": "https://github.com/madanbaduwal/madanbaduwal-old.github.io/blob/main/assets/Documents/Certification/MadanBaduwal-ECCBatch5page-001.jpg",
-      "icon": "fa-solid fa-hashtag"
+      "icon": "fa-solid fa-book"
     }
   ],
   "extra-activities": [
@@ -201,18 +229,6 @@
         "AI Workshop Participant , MPercept Technology Pvt , 2019",
         "Data Science Workshop Participant, F1Soft International Pvt. Ltd., 2019"
       ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    },
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
     }
   ]
 }

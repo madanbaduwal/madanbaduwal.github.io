@@ -3,8 +3,8 @@ layout: page
 title: Phishing Detection
 description: 🕵️ Phishing detection using machine learning and URLs involves leveraging algorithms to analyze website URLs for signs of fraudulent activity.
 img: assets/img/phishing-detection.jpg
-importance: 4
-category: work
+importance: 8
+category: project
 ---
 
 Phishing attacks remain a significant security concern for both individuals and organizations, resulting in billions of dollars in losses annually. Machine learning (ML) has emerged as a promising approach for detecting such attacks by analyzing patterns and anomalies within large datasets. However, achieving an optimal balance between feature selection and model selection poses a challenging task in ML for phishing detection.

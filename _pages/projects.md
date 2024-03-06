@@ -2,10 +2,10 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: Over the past years, I've completed a series of projects spanning Machine Learning, Computer Vision, Natural Language Processing (NLP), and robotics.
 nav: true
 nav_order: 3
-display_categories: [work, fun]
+display_categories: [project, fun]
 horizontal: false
 ---
 
