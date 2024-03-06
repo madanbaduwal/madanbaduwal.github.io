@@ -170,64 +170,36 @@
       "icon": "fa-solid fa-coursera"
     },
     {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
+      "name": "Certified Ethical Hacking(CEH)",
+      "date": "2019-08-01",
+      "issuer": "Neosphere",
+      "url": "https://raw.githubusercontent.com/madanbaduwal/madanbaduwal-old.github.io/main/assets/Documents/Certification/Certificialethicalhacking.jpg",
       "icon": "fa-solid fa-tag"
     },
     {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
+      "name": "Sequence Models",
+      "date": "2020-02-01",
+      "issuer": "Coursera",
+      "url": "https://www.coursera.org/account/accomplishments/certificate/38G82ZYNDA4C",
       "icon": "fa-solid fa-envelope"
     },
     {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
+      "name": "Effective Client Communication",
+      "date": "2020-06-01",
+      "issuer": "Fusemachines",
+      "url": "https://github.com/madanbaduwal/madanbaduwal-old.github.io/blob/main/assets/Documents/Certification/MadanBaduwal-ECCBatch5page-001.jpg",
       "icon": "fa-solid fa-hashtag"
-    },
-    {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
-    },
-    {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
     }
   ],
-  "languages": [
+  "extra-activities": [
     {
-      "language": "German",
-      "fluency": "Native speaker",
-      "icon": ""
-    },
-    {
-      "language": "English",
-      "fluency": "Fluent",
-      "icon": ""
-    }
-  ],
-  "interests": [
-    {
-      "name": "Physics",
+      "name": "Computer Science",
       "icon": "fa-solid fa-tag",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Lite Exhibition Participant, Kantipur Engineering College, 2015,2016,2017,2018",
+        "Himalayan Exhibition (HEx) Participant, Himalayan College of Engineering, 2017",
+        "AI Workshop Participant , MPercept Technology Pvt , 2019",
+        "Data Science Workshop Participant, F1Soft International Pvt. Ltd., 2019"
       ]
     }
   ],

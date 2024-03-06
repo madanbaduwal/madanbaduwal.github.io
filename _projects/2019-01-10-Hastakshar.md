@@ -11,10 +11,13 @@ category: work
 
 The signature verification system presents an investigation into using Convolutional Neural Networks (CNN) for Writer-Dependent models in signature verification."
 
-<iframe width="700" height="500" src="https://www.youtube.com/embed/g3rvkWl8mHQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<br>
-
+<div class="row mt-1">
+    <div class="col-12 mt-1">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/g3rvkWl8mHQ" allowfullscreen autoplay></iframe>
+        </div>
+    </div>
+</div>
 # Github
 The Github repository can also be found here:
 

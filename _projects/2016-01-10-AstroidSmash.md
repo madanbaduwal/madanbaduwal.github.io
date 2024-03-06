@@ -16,8 +16,19 @@ Implementing advanced mechanics, the game employs Reinforcement Learning for the
 
 To gauge the health of our asteroid, a stress meter is provided, with players initially equipped with 98 shields for protection and another 98 life points to bolster the asteroid's size.
 
-<iframe width="700" height="500" src="https://www.youtube.com/embed/4NxQOkgr2Zw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- <iframe width="700" height="500" src="https://www.youtube.com/embed/4NxQOkgr2Zw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
-<br>
+
+<div class="row mt-1">
+    <div class="col-12 mt-1">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/4NxQOkgr2Zw" allowfullscreen autoplay></iframe>
+        </div>
+    </div>
+</div>
+
+
 
 **Download app from here :** <a href="https://drive.google.com/file/d/1bKXiCgcp6sbDpM1nbGj7XEGBrHlQKJmU/view?usp=sharing" class="btn btn--success">Download</a>
+
+
