@@ -16,15 +16,21 @@ This paper provides a comprehensive survey of various ML techniques and paradigm
 The findings of this survey offer valuable insights into the current state of the art in phishing detection and can serve as a valuable resource for researchers and practitioners in the field.
 
 
-<iframe width="700" height="500" src="https://www.youtube.com/embed/_Tv3nT6WqzU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<br>
+<div class="row mt-1">
+    <div class="col-12 mt-1">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_Tv3nT6WqzU?si=M_WtvmAR24qvgg8R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
 
 # Run Project 
 
 The Github repository can also be found here:
 
 [![madanbaduwal/phishing-detection-transformer - GitHub](https://gh-card.dev/repos/madanbaduwal/phishing-detection-transformer.svg)](https://github.com/madanbaduwal/phishing-detection-transformer)
+
 ```bash
 
 cd phishing-detection-transformer
