@@ -4,7 +4,7 @@ permalink: /cv/
 title: cv
 nav: true
 nav_order: 2
-cv_pdf: Resume.pdf
+cv_pdf: Baduwal_Madan_Resume.pdf
 toc:
   sidebar: left
 ---
