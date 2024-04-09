@@ -3,7 +3,7 @@ layout: page
 title: AntiGravity Ball
 description: ⚾AntiGravity Ball is an engaging 2D Android game where the objective is to skillfully guide the ball downwards to accumulate higher scores.
 img: assets/img/AntiGravity-Ball.jpg
-importance: 6
+importance: 10
 category: project
 ---
 

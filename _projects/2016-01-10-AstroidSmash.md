@@ -3,7 +3,7 @@ layout: page
 title: AstroidSmash
 description: ✨ AstroidSmash is a mini captivating 2D Android game where your objective is to expand the central asteroid's size by safeguarding it against collisions with other asteroids, thereby earning higher scores.
 img: assets/img/AstroidSmash.jpg
-importance: 2
+importance: 7
 category: project
 ---
 

@@ -3,7 +3,7 @@ layout: page
 title: Beat Creator
 description: 🎶 Beat Creator is a dedicated Android application designed for crafting musical beats.
 img: assets/img/Beat-Creator.jpg
-importance: 7
+importance: 8
 category: project
 ---
 
