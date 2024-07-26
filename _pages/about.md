@@ -21,7 +21,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Hi there! Thanks for visiting my personal webpage. I'm a dedicated and experienced Machine Learning and Software Engineer. With a strong academic background in computer science and mathematics, combined with practical industry experience, I excel at utilizing engineering and machine learning techniques to generate actionable insights and create impactful solutions.
+Hi there! Thanks for visiting my personal webpage. I'm a dedicated and experienced Machine Learning Software Engineer. With a strong academic background in computer science and mathematics, combined with practical industry experience, I excel at utilizing engineering and machine learning techniques to generate actionable insights and create impactful solutions.
 
 My research interests lie in Cognitive neuroscience, Data Structure and Algorithms, Deep Learning(Multimodal Learning, Generative AI, LLM), Computer Vision, Natural Language Processing,Software Engineering, and Robotics. In particular I am interested in reverse-engineering the human mind to build embodied machines that can see, listen, speak, learn, and interact with human-level cognition and social intelligence.
 
