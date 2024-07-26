@@ -1,12 +1,11 @@
 {
   "basics": {
     "name": "Madan Baduwal",
-    "label": "Machine Learning Engineer",
+    "label": "Machine Learning Software Engineer",
     "image": "",
     "email": "madanbaduwal100@gmail.com",
     "phone": "(432) 3161183",
-    "url": "https://madanbaduwal.github.io",
-    "summary": "Machine learning engineer with 4+ years of experience in AI and Software Engineering.",
+    "summary": "Machine learning Software engineer with 7+ years of experience in AI and Software Engineering.",
     "location": {
       "address": "2712 Broadway St",
       "postalCode": "CA 94115",
@@ -95,7 +94,7 @@
       "url": "https://www.utpb.edu/",
       "startDate": "2023-01-16",
       "endDate": "Ong.",
-      "highlights": ["Research on multimodal learning chatbots"]
+      "highlights": ["ptimizing and fine-tuning advanced multimodal models, including OpenAI’s CLIP, MMBT, VL-BERT, ViLBERT, and LXMERT.", "Collected a well-annotated multimodal dataset (text and image) that meets university requirements."]
     }
   ],
   "publications": [
