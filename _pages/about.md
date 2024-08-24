@@ -11,7 +11,8 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Belmont, CA</p>
+    <p style="padding-left: 30px;">Belmont, CA</p>
+
 
 news: true # includes a list of news items
 latest_posts: true # includes a list of the newest posts
