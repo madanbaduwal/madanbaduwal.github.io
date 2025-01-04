@@ -23,6 +23,15 @@
   },
   "education": [
     {
+      "institution": "Mississippi State University",
+      "location": "Starkville, MS",
+      "url": "https://www.msstate.edu/",
+      "area": "Machine Learning, Wireless Communication",
+      "studyType": "PhD",
+      "startDate": "2025-01-15",
+      "endDate": "2028-12-15"
+    },
+    {
       "institution": "University Of Texas Permian Basin",
       "location": "Texas, USA",
       "url": "https://www.utpb.edu/",
@@ -89,6 +98,13 @@
   ],
   "research": [
     {
+      "organization": "Mississippi State University",
+      "position": "Graduate Research Assistant",
+      "url": "https://www.msstate.edu/",
+      "startDate": "2025-01-01",
+      "endDate": "Ong."
+    },
+    {
       "organization": "University Of Texas Permian Basin",
       "position": "Graduate Research Assistant",
       "url": "https://www.utpb.edu/",
@@ -152,6 +168,12 @@
     }
   ],
   "awards": [
+    {
+      "title": "Graduate research assistant",
+      "date": "2025-01-01",
+      "awarder": "Mississippi State University",
+      "url": "https://www.msstate.edu/"
+    },
     {
       "title": "Graduate research assistant",
       "date": "2023-01-16",
