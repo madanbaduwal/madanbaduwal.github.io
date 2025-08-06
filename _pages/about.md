@@ -22,9 +22,9 @@ social: true # includes social icons at the bottom of the page
 
 Hi there! Thank you for visiting my personal webpage. I am currently pursuing a PhD in Computer Science at Mississippi State University (MSU).
 
-My academic foundation lies in **Physics, and Mathematics**.
+My academic foundation lies in **Physics, Mathematics, and Computer Science**.
 
-My research interests lie in **Cross-Modal Interaction Learning** and its applications in Computer science, Cognitive neuroscience, ComWireless Communication, Software Engineering, Embodied AI, and Robotics. I am particularly interested in reverse-engineering the human mind to build embodied machines that can see, listen, speak, learn, and interact with human-level cognition and social intelligence.
+My research interests lie in **Cross-Modal Interaction Learning** and its applications in Computer science, Cognitive neuroscience, Wireless Communication, Software Engineering, Embodied AI, and Robotics. I am particularly interested in reverse-engineering the human mind to build embodied machines that can see, listen, speak, learn, and interact with human-level cognition and social intelligence.
 
 
 
