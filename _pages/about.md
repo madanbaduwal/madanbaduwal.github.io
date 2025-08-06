@@ -24,7 +24,7 @@ Hi there! Thank you for visiting my personal webpage. I am currently pursuing a 
 
 My academic foundation lies in **Physics, Mathematics, and Computer Science**.
 
-My research interests lie in **Cross-Modal Interaction Learning** and its applications in Computer science, Cognitive neuroscience, Wireless Communication, Software Engineering, Embodied AI, and Robotics. I am particularly interested in reverse-engineering the human mind to build embodied machines that can see, listen, speak, learn, and interact with human-level cognition and social intelligence.
+My research interests lie at the intersection of **Artificial Intelligence** and **Robotics**, with a focus on **Cross-Modal Interaction Learning** understanding how humans perceive, process, and integrate multisensory information to make decisions. I am particularly interested in reverse-engineering the human mind to develop robots capable of seeing, listening, speaking, learning, and interacting with human-like cognition and social intelligence.
 
 
 
