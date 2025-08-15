@@ -24,7 +24,7 @@ Hi there! Thank you for visiting my personal webpage. I am currently pursuing a 
 
 My academic foundation lies in **Physics, Mathematics, and Computer Science**.
 
-My research interests lie at the intersection of **Signal Processing**, **Multimodal Reasoning in Machine Learning**, **Artificial Intelligence**, and **Robotics**. I explore how humans perceive, process, and integrate information from multiple senses to make informed decisions. My ultimate goal is to reverse-engineer aspects of human cognition to develop robots capable of seeing, listening, speaking, learning, and interacting with human-like perception, reasoning, and social intelligence.
+My research interests lie at the intersection of **Signal Processing**, **Multimodal Reasoning in Machine Learning**, **Quantum Machine Learning**, and **Robotics**. I explore how humans perceive, process, and integrate information from multiple senses to make informed decisions. My ultimate goal is to reverse-engineer aspects of human cognition to develop robots capable of seeing, listening, speaking, learning, and interacting with human-like perception, reasoning, and social intelligence.
 
 
 
