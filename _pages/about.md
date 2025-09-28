@@ -26,7 +26,7 @@ My academic foundation lies in **Physics, Math,& CS.**
 
 My PhD research lies at the intersection of **Wireless Communication & Signal Processing, Multimodal Machine Learning, Quantum Machine Learning, and Robotics.**
 
-My long-term career goal is to explore how humans **perceive, process, and integrate** information from multiple senses to make informed **decisions**. Ultimately, I aim to reverse-engineer aspects of human cognition to develop robots capable of **seeing, listening, speaking, learning, and interacting** with human-like **perception, reasoning, and social intelligence.**
+My long-term career goal is to explore how humans **perceive, process, and integrate** information from multiple senses to make informed **decisions**. Ultimately, I aim to reverse-engineer aspects of human cognition to develop robots capable of **seeing, listening, speaking, learning, and interacting** with human-like **Perception Understanding, Planning/Navigation/Reasoning, and Control/Manipulation/Policy Learning.**
 
 
 I was a Graduate Research Assistant at the University of Texas Permian Basin under Prof.[Quan Yuan](https://www.utpb.edu/directory/faculty-staff/yuan_q), while pursuing my master's degree in Computer Science.
