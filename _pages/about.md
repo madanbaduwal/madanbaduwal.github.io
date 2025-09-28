@@ -22,9 +22,7 @@ social: true # includes social icons at the bottom of the page
 
 Hi there! Thank you for visiting my personal webpage. I am currently pursuing a PhD in Computer Science at Mississippi State University (MSU).
 
-My academic foundation lies in **Physics, Math,& CS.**
-
-My PhD research lies at the intersection of **Wireless Communication & Signal Processing, Multimodal Machine Learning, Quantum Machine Learning, and Robotics.**
+My academic foundation lies in **Physics, Math,& CS.** My PhD research lies at the intersection of **Wireless Communication & Signal Processing, Multimodal Machine Learning, Quantum Machine Learning, and Robotics.**
 
 My long-term career goal is to explore how humans **perceive, process, and integrate** information from multiple senses to make informed **decisions**. Ultimately, I aim to reverse-engineer aspects of human cognition to develop robots capable of **seeing, listening, speaking, learning, and interacting** with human-like **Perception Understanding, Planning/Navigation/Reasoning, and Control/Manipulation/Policy Learning.**
 
