@@ -21,7 +21,7 @@ social: true # includes social icons at the bottom of the page
 ---
 
 ## About Me
-I am currently pursuing a PhD in Computer Science at Mississippi State University (MSU). My academic background spans **Physics, Math,& CS**, providing a strong interdisciplinary foundation for my research. My PhD work lies at the intersection of **Wireless Communication and Signal Processing, Multimodal Machine Learning, Quantum Machine Learning, and Robotics.** 
+I am currently pursuing a PhD in Computer Science at Mississippi State University (MSU). My academic background spans **Physics, Math,& CS**, providing a strong interdisciplinary foundation for my research. My PhD work lies at the intersection of **Signal Processing, Machine Learning, Quantum Computing, and Robotics.** 
 
 My long-term research objective is to investigate how humans perceive, process, and integrate multisensory information to make informed decisions. Ultimately, my goal is to reverse-engineer aspects of human cognition to develop robotic systems capable of **Perception Understanding, Planning/Navigation/Reasoning, and Control/Manipulation/Policy Learning**. This vision is directed toward creating intelligent robots that can see, listen, speak, learn, and interact with human-like adaptability and social intelligence.
 
