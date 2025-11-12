@@ -56,27 +56,19 @@
   ],
   "work": [
     {
-      "name": "Matrice.ai",
+      "name": "Fusemachines",
       "position": "Sr.Machine Learning Engineer",
-      "url": "https://matrice.ai/",
-      "startDate": "2022-11-01",
-      "endDate": "2023-02-30",
-      "highlights": ["Designed and developed a no-code data-centric AI platform for building and deploying ML apps, reducing user deployment time by 40% and development costs by 80% using Pytorch, React, Django, and AWS technologies."]
-    },
-    {
-      "name": "BP Eye Foundation",
-      "position": "Sr.Machine Learning Engineer",
-      "url": "https://www.bpeyefoundation.org/",
-      "startDate": "2022-05-01",
-      "endDate": "2022-11-30",
-      "highlights": ["Optimized and automated semantic segmentation and detection (accuracy: 85%) for otitis media Otoscopy images of the tympanic membrane, driving $100k of revenue annually by increasing the doctor-patient ratio by 1.5x.", "Deployed the app as a SaaS product for 5+ hospitals, leveraging Pytorch, Django, Dell EMC servers, and CI/CD."]
+      "url": "https://fusemachines.com/",
+      "startDate": "2022-01-01",
+      "endDate": "2022-12-30",
+      "highlights": ["Designed and developed a no-code data-centric AI platform for building and deploying ML apps, reducing user deployment time by 40% and development costs by 80% using Pytorch, React, Django, and AWS technologies.", "Optimized and automated semantic segmentation and detection (accuracy: 85%) for otitis media Otoscopy images of the tympanic membrane, driving $100k of revenue annually by increasing the doctor-patient ratio by 1.5x.", "Deployed the app as a SaaS product for 5+ hospitals, leveraging Pytorch, Django, Dell EMC servers, and CI/CD."]
     },
     {
       "name": "Fusemachines",
       "position": "Machine Learning Engineer",
       "url": "https://fusemachines.com/",
-      "startDate": "2020-02-01",
-      "endDate": "2022-02-30",
+      "startDate": "2020-01-01",
+      "endDate": "2021-12-30",
       "highlights": ["Led a 10-person team to develop an AI-enabled student progress tracking platform (fuseclassroom.com), doubling the teacher-student ratio to 1:30. Currently operational in ∼60 Nepalese colleges with 20k active students.", "Orchestrated a phishing detection engine for over 10 clients under WMC Global, improving accuracy from 85% to 90% by selecting the optimal number of clusters using the silhouette score, detecting millions of URLs per day.", "Conducted over 20+ trainings, workshops, knowledge-sharing, and paper reading sessions on mathematics and machine learning. Empowered ML skills of ∼5k students by collaborating with schools, colleges, and universities.", "Enriched AI affordable courses by researching, designing, reviewing, and refining content, including reading material, quizzes, assignments, and projects for Fusemachines AI Education Programs, specifically focusing on the ”Micro Degree in Artificial Intelligence, Machine Learning, Computer Vision, and Natural Language Processing.”"]
     },
     {
@@ -102,7 +94,8 @@
       "position": "Graduate Research Assistant",
       "url": "https://www.msstate.edu/",
       "startDate": "2025-01-01",
-      "endDate": "Ong."
+      "endDate": "Ong.",
+      "highlights": ["Research: Signal Processing, Machine Learning, Quantum Computing, Robotics"]
     },
     {
       "organization": "University Of Texas Permian Basin",
