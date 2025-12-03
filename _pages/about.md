@@ -22,9 +22,9 @@ social: true # includes social icons at the bottom of the page
 
 ## About Me  
 
-My journey began with a fascination for **Physics**, **Chemistry**, and **Biology**, a quest to understand the **fundamental rules of nature**. **Mathematics** soon became my language for that pursuit; my intellectual space was spanned by three basis vectors: **Linear Algebra**, **Calculus**, and **Probability**.  
+My journey began with a deep fascination for **physics, chemistry, and biology**, a desire to understand the fundamental rules of nature, and to solve meaningful problems across domains such as **engineering, entertainment, robotics, finance, economics ...**. **English, mathematics,** and **programming** soon became the languages through which I explored that curiosity. 
 
-Andrew Ng’s Machine Learning course introduced me to **Artificial Intelligence (AI)**, where I realized that AI is a symphony composed of mathematical harmonies. Since then, I’ve been immersed in this symphony, representing data as **tensors**, uncovering structure through **calculus**, and reasoning through **probability distributions**.  
+Over time, my intellectual space came to be defined by three core basis vectors: **linear algebra, calculus,** and **probability**. Andrew Ng’s Machine Learning course introduced me to **Artificial Intelligence (AI)**, where I realized that AI is a symphony composed of mathematical harmonies. Since then, I’ve been immersed in this symphony, representing data as **tensors**, uncovering structure through **calculus**, and reasoning through **probability distributions**.  
 
 Today, I use Mathematics and Computer Science, from algorithms to AI, to explore **nature’s principles** and develop intelligent systems that solve **real-world problems**. My ultimate vision is to create AGI-driven robots capable of investigating the fundamental laws of nature and addressing the challenges faced by living beings.  
 
