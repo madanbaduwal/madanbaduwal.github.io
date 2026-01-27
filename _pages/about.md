@@ -26,15 +26,15 @@ My journey began with a deep fascination for **physics**, **chemistry**, and **b
 ---
 
 **Input Space**  
-- **Mathematics**: represent any kind of data as numbers $(-infinity ... 0 ... +infinity)$  
+- **Mathematics**: represent any kind of data as numbers (-infinity ... 0 ... +infinity)
 - **Computer Science**: store it in data structures like **list**, **dictionary**, **set**, **tuple**… or finally in **bits** (e.g., `100101`)
 
 **Processing**  
-- **Mathematics**: apply **functions** ($+, -, *, /$, etc.)  
+- **Mathematics**: apply **functions** (+, -, *, /, etc.)  
 - **Computer Science**: apply **algorithms** to the input space
 
 **Output Space**  
-- **Mathematics**: represent any kind of data as numbers $(-infinity... 0 ... +infinity)$  
+- **Mathematics**: represent any kind of data as numbers (-infinity... 0 ... +infinity)  
 - **Computer Science**: store it in data structures like **list**, **dictionary**, **set**, **tuple**… or finally in **bits** (e.g., `100101`)
 
 ---
