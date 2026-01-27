@@ -19,16 +19,26 @@ latest_posts: true # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
+My journey began with a deep fascination for **physics**, **chemistry**, and **biology**, a desire to understand the fundamental rules of nature and to solve meaningful problems across domains such as **healthcare/medicine**, **neuroscience & cognitive science**, **engineering**, **entertainment**, **agriculture**, **social computing**, **economics & finance**... .
 
-## About Me  
+**English**, **mathematics**, and **computer science (CS)** soon became the languages through which I explored this curiosity. I approach problem-solving in three steps:
 
-My journey began with a deep fascination for **physics, chemistry, and biology**, a desire to understand the fundamental rules of nature, and to solve meaningful problems across domains such as **engineering, entertainment, robotics, finance, economics ...**. **English, mathematics,** and **programming** soon became the languages through which I explored that curiosity. 
+1. **Input Space:**
+   
+   * **Mathematics**: represent any kind of data as numbers \(-\infty \dots 0 \dots +\infty\)
+   * **CS**: store it in data structures like **list**, **dictionary**, **set**, **tuple**... or finally in **bits** \(100101\).
+3. **Processing:**
+   
+   * **Mathematics**: apply **functions** \((+, -, /, ...)\)
+   * **CS**: use **algorithms** into input space.
+5. **Output Space**
+   
+   * **Mathematics**: express results as numbers
+   * **CS**: store outcomes in appropriate **data structures** finally in **bits**.
 
-Over time, my intellectual space came to be defined by three core basis vectors: **linear algebra, calculus,** and **probability**. Andrew Ng’s Machine Learning course introduced me to **Artificial Intelligence (AI)**, where I realized that AI is a symphony composed of mathematical harmonies. Since then, I’ve been immersed in this symphony, representing data as **tensors**, uncovering structure through **calculus**, and reasoning through **probability distributions**.  
+Today, I use **Mathematics** \((**sets**, **linear algebra**, **calculus**, **probability & statistics**)\) and **Computer Science** \((**algorithms**, **machine learning**, **system design**)\) to explore nature’s principles and develop **intelligent systems** that solve real-world problems. My ultimate vision is to create **robots** capable of investigating the fundamental laws of nature and addressing the challenges faced by living beings.
 
-Today, I use Mathematics and Computer Science, from algorithms to AI, to explore **nature’s principles** and develop intelligent systems that solve **real-world problems**. My ultimate vision is to create AGI-driven robots capable of investigating the fundamental laws of nature and addressing the challenges faced by living beings.  
-
-I am currently pursuing a Ph.D. in Computer Science at Mississippi State University (MSU), where my research spans **Signal Processing**, **Machine Learning**, **Quantum Computing**, and **Robotics**.  
+I am currently pursuing a **Ph.D. in Computer Science** at **Mississippi State University (MSU)**, where my research spans **Machine Learning** and **Wireless Communication**.  
 
 Previously, I served as a Graduate Research Assistant at the University of Texas Permian Basin (UTPB) under the supervision of [**Prof. Quan Yuan**](https://www.utpb.edu/directory/faculty-staff/yuan_q) while completing my Master’s in Computer Science. I hold a Bachelor’s degree in Computer Engineering from Tribhuvan University, where I worked under the guidance of [**Prof. Sanjeev Prasad Panday**](https://scholar.google.com/citations?user=oTWWLT8AAAAJ&hl=en).  
 
