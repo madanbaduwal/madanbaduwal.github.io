@@ -23,18 +23,15 @@ My journey began with a deep fascination for **physics**, **chemistry**, and **b
 
 **English**, **mathematics**, and **computer science (CS)** soon became the languages through which I explored this curiosity. I approach problem-solving in three steps:
 
-1. **Input Space:**
-   
-   * **Mathematics**: represent any kind of data as numbers $(-\infty \dots 0 \dots +\infty)$
-   * **CS**: store it in data structures like **list**, **dictionary**, **set**, **tuple**... or finally in **bits** (100101).
-3. **Processing:**
-   
-   * **Mathematics**: apply **functions** (+, -, /, ...)
-   * **CS**: use **algorithms** into input space.
-5. **Output Space**
-   
-   * **Mathematics**: represent any kind of data as numbers $(-\infty \dots 0 \dots +\infty)$
-   * **CS**: store it in data structures like **list**, **dictionary**, **set**, **tuple**... or finally in **bits** (100101).
+1. Input Space:
+   * Mathematics: represent any kind of data as numbers $(-\infty \dots 0 \dots +\infty)$
+   * CS: store it in data structures like **list**, **dictionary**, **set**, **tuple**... or finally in **bits** (100101).
+2. Processing:
+   * Mathematics: apply **functions** (+, -, /, ...)
+   * CS: use **algorithms** on input space.
+3. Output Space:
+   * Mathematics: represent any kind of data as numbers $(-\infty \dots 0 \dots +\infty)$
+   * CS: store it in data structures like **list**, **dictionary**, **set**, **tuple**... or finally in **bits** (100101).
      
 Today, I use **Mathematics** \((**sets**, **linear algebra**, **calculus**, **probability & statistics**)\) and **Computer Science** \((**algorithms**, **machine learning**, **system design**)\) to explore nature’s principles and develop **intelligent systems** that solve real-world problems. My ultimate vision is to create **robots** capable of investigating the fundamental laws of nature and addressing the challenges faced by living beings.
 
