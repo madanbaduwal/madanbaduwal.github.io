@@ -30,7 +30,7 @@ My journey began with a deep fascination for **physics**, **chemistry**, and **b
 - **Computer Science**: store it in data structures like **list**, **dictionary**, **set**, **tuple**… or finally in **bits** (e.g., `100101`)
 
 **Processing**  
-- **Mathematics**: apply **functions** ($+, -, \times, \div$, etc.)  
+- **Mathematics**: apply **functions** ($+, -, *, /$, etc.)  
 - **Computer Science**: apply **algorithms** to the input space
 
 **Output Space**  
