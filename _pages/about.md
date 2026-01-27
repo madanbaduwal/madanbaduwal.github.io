@@ -26,7 +26,7 @@ My journey began with a deep fascination for **physics**, **chemistry**, and **b
 ---
 
 **Input Space**  
-- **Mathematics**: represent any kind of data as numbers $(-\infty \dots 0 \dots +\infty)$  
+- **Mathematics**: represent any kind of data as numbers $(-infty ... 0 ... +infty)$  
 - **Computer Science**: store it in data structures like **list**, **dictionary**, **set**, **tuple**… or finally in **bits** (e.g., `100101`)
 
 **Processing**  
@@ -34,7 +34,7 @@ My journey began with a deep fascination for **physics**, **chemistry**, and **b
 - **Computer Science**: apply **algorithms** to the input space
 
 **Output Space**  
-- **Mathematics**: represent any kind of data as numbers $(-\infty \dots 0 \dots +\infty)$  
+- **Mathematics**: represent any kind of data as numbers $(-infty... 0 ... +infty)$  
 - **Computer Science**: store it in data structures like **list**, **dictionary**, **set**, **tuple**… or finally in **bits** (e.g., `100101`)
 
 ---
