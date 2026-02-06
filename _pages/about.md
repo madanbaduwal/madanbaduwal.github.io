@@ -21,7 +21,7 @@ social: true # includes social icons at the bottom of the page
 ---
 My journey began with a deep fascination for **physics**, **chemistry**, and **biology**, a desire to understand the fundamental rules of nature and to solve meaningful problems across domains such as **healthcare/medicine**, **neuroscience & cognitive science**, **engineering**, **entertainment**, **agriculture**, **social computing**, **economics & finance**... .
 
-**English**, **mathematics**, and **computer science (CS)** soon became the languages through which I explored this curiosity. I approach problem-solving in three steps:
+I approach problem-solving in three steps:
 
 ---
 
@@ -39,7 +39,8 @@ My journey began with a deep fascination for **physics**, **chemistry**, and **b
 
 ---
 
-Today, I use **Mathematics** (**sets**, **linear algebra**, **calculus**, **probability & statistics**) and **Computer Science** (**algorithms**, **machine learning**, **system design**) to explore nature’s principles and develop **intelligent systems** that solve real-world problems. My ultimate vision is to create **robots** capable of investigating the fundamental laws of nature and addressing the challenges faced by living beings.
+**English**, **mathematics**, and **computer science (CS)** soon became the languages through which I explored this curiosity. 
+Today, I use **Mathematics** (**sets**, **linear algebra**, **calculus**, **probability & statistics**) and **Computer Science** (**algorithms**, **machine learning**, **system design**) to explore nature’s principles and develop **intelligent systems** that solve real-world problems across domains. My ultimate vision is to create **robots** capable of investigating the fundamental laws of nature and addressing the challenges faced by living beings.
 
 I am currently pursuing a **Ph.D. in Computer Science** at **Mississippi State University (MSU)**, where my research spans **Machine Learning** and **Wireless Communication**. Previously, I served as a Graduate Research Assistant at the University of Texas Permian Basin (UTPB) under the supervision of [**Prof. Quan Yuan**](https://www.utpb.edu/directory/faculty-staff/yuan_q) while completing my Master’s in Computer Science. I hold a Bachelor’s degree in Computer Engineering from Tribhuvan University, where I worked under the guidance of [**Prof. Sanjeev Prasad Panday**](https://scholar.google.com/citations?user=oTWWLT8AAAAJ&hl=en). I have also had the privilege of collaborating with [**Mahabir Pun**](https://en.wikipedia.org/wiki/Mahabir_Pun) and [**Rabin Dhakal**](https://scholar.google.com/citations?user=i7ETIcsAAAAJ&hl=en).  
 
