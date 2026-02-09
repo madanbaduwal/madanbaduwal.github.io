@@ -32,6 +32,7 @@ I approach problem-solving in three steps:
 **Processing**  
 - **Mathematics**: apply **functions** (+, -, *, /, etc.)  
 - **Computer Science**: apply **algorithms** to the input space
+- **Mathematical Brain Modeling**: Understanding, Planning, Reasoning, Memory, Communication, Continual Learning... 
 
 **Output Space**  
 - **Mathematics**: represent any kind of data as numbers (-infinity... 0 ... +infinity)  
