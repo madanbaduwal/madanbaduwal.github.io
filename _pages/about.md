@@ -31,8 +31,7 @@ I approach problem-solving in three steps:
 **Processing**  
 - **Mathematics**: apply **functions** (+, -, *, /, etc.)  
 - **Computer Science**: apply **algorithms** to the input space
-- **Mathematical Modeling of Cognition and Neuroscience**: Perception, Understanding, Reasoning, Planning, Act, Observe, Reflect, Learn/Continual learning, Memory, Communication…
-
+- **Mathematical Modeling of humans/animals(Cognition and Neuroscience)**: Perception, Understanding, Reasoning, Planning/Navigation, Act/Control & Manipulation, Observe, Reflect, Learn/Continual learning, Memory, Communication… .
 **Output Space**  
 - **Mathematics**: represent any kind of data as numbers (-infinity... 0 ... +infinity)  
 - **Computer Science**: store it in data structures like **list**, **dictionary**, **set**, **tuple**… or finally in **bits** (e.g., `100101`)
