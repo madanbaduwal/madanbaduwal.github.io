@@ -31,11 +31,13 @@ I approach problem-solving in three steps:
 **Processing**  
 - **Mathematics**: apply **functions** (+, -, *, /, etc.)  
 - **Computer Science**: apply **algorithms** to the input space
-- **Mathematical Modeling of humans/animals(Cognition and Neuroscience)**: Perception, Understanding, Reasoning, Planning/Navigation, Act/Control & Manipulation, Observe, Reflect, Learn/Continual learning, Memory, Communication… .
+
 **Output Space**  
 - **Mathematics**: represent any kind of data as numbers (-infinity... 0 ... +infinity)  
 - **Computer Science**: store it in data structures like **list**, **dictionary**, **set**, **tuple**… or finally in **bits** (e.g., `100101`)
 
+
+**Goal: Mathematical Modeling of Humans/Animals(Cognition and Neuroscience)**: Perception / Observation, Understanding, Word Model / State Representation, Memory, Goal/Objective, Reasoning, Planning/Path planning, Decision-Making / Policy, Tool Interference / Act /Control & Manipulation / Action / Actuation , Feedback / Observation Loop , Learning / Continual learning / Adaptation, Reflection / Self-Monitoring (optional but powerful)… .
 
 
 **English**, **mathematics**, and **computer science (CS)** soon became the languages through which I explored this curiosity. 
