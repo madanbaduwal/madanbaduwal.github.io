@@ -19,7 +19,7 @@ latest_posts: true # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
-My journey began with a deep fascination for **physics**, **chemistry**, and **biology**-further inspired by **philosophy, cognitive science, and neuroscience,**-and a desire to understand the fundamental rules of nature and to solve meaningful problems across domains such as **healthcare/medicine**, **engineering**, **entertainment**, **agriculture**, **social computing**, **economics & finance**... .
+My journey began with a deep fascination for **physics**, **chemistry**, and **biology**-further inspired by **philosophy, psychology, cognitive science, and neuroscience,**-and a desire to understand the fundamental rules of nature and to solve meaningful problems across domains such as **healthcare/medicine**, **engineering**, **entertainment**, **agriculture**, **social computing**, **economics & finance**... .
 
 I approach problem-solving in three steps:
 
