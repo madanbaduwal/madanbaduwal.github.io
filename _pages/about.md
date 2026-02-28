@@ -25,9 +25,9 @@ My journey began with a deep fascination for **physics**, **chemistry**, and **b
 **English**, **mathematics**, and **computer science (CS)** soon became the languages through which I explored this curiosity. 
 Today, I use **Mathematics** (**sets**, **linear algebra**, **calculus**, **probability & statistics**) and **Computer Science** (**algorithms**, **machine learning**, **system design**) to explore nature’s principles and develop **intelligent systems** that solve real-world problems across domains. 
 
-**Goal: Robotics(Mathematical Modeling of Humans/Animals(Cognition Neuroscience, Computer Science, Robotics)**: Perception / Observation, Understanding, Word Model / State Representation, Memory, Goal/Objective, Reasoning, Planning/Path planning, Decision-Making / Policy, Tool Interference / Act /Control & Manipulation / Action / Actuation , Feedback / Observation Loop , Learning / Continual learning / Adaptation, Reflection / Self-Monitoring (optional but powerful)… .). My ultimate vision is to create **robots** capable of investigating the fundamental laws of nature and addressing the challenges faced by living beings.
+**Goal: Specialized robots/agents(Mathematical Modeling of Humans/Animals(Cognition Neuroscience, Computer Science, Robotics)**: Perception / Observation, Understanding, Word Model / State Representation, Memory, Goal/Objective, Reasoning, Planning/Path planning, Decision-Making / Policy, Tool Interference / Act /Control & Manipulation / Action / Actuation , Feedback / Observation Loop , Learning / Continual learning / Adaptation, Reflection / Self-Monitoring (optional but powerful)… .). My ultimate vision is to create **robots/agents** capable of investigating the fundamental laws of nature and addressing the challenges faced by living beings.
 
-I approach problem-solving in three steps:
+I approach problem-solving in three steps(Divide any task into small functional/module):
 
 **Input Space**  
 - **Mathematics**: represent any kind of data as numbers (-infinity ... 0 ... +infinity)
