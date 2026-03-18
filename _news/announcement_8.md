@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2026-01-18 15:59:00-0400
+date: 2026-01-01 15:59:00-0400
 inline: true
 related_posts: false
 ---
 
-Paper accepted at IEEE ICC 2026 (IEEE International Conference on Communications). 🎉
+Paper published in Computers (Special Issue on Machine Learning):“Federated Learning: A Survey of Core Challenges, Current Methods, and Opportunities.” 🎉
