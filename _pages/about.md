@@ -30,7 +30,7 @@ Today, I use **Mathematics** (**sets**, **linear algebra**, **calculus**, **prob
 
 **Specialized robots/agents loop: Multimodal: Perception → Reasoning → Action → Learning**
 
-**Goal: Find unified architecture/algorithm of everything(AoE) that capture patterns across modalities(vision,language...), tasks(perception, reasoning, planning, action...), learning(supervised,unsupervised,reinforcement...): over/across time-space/spatio-temporal.**
+**Goal: Find unified architecture/algorithm of everything(AoE) that capture patterns across modalities(signal, vision,language...), tasks(perception, reasoning, planning, action...), learning(supervised,unsupervised,reinforcement...): over/across time-space/spatio-temporal.**
 
 I approach problem-solving in three steps(Divide any task into small functional/module):
 
