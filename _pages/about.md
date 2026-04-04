@@ -25,13 +25,11 @@ My journey began with a deep fascination for **physics**, **chemistry**, and **b
 **English**, **mathematics**, and **computer science (CS)** soon became the languages through which I explored this curiosity. 
 Today, I use **Mathematics** (**sets**, **linear algebra**, **calculus**, **probability & statistics**) and **Computer Science** (**algorithms**, **machine learning**, **system design**) to explore nature’s principles and develop **intelligent systems** that solve real-world problems across domains. 
 
-**Goal: Specialized robots/agents(Mathematical Modeling of Humans/Animals(Cognition Neuroscience, Computer Science, Robotics)**: Multimodal:  Perception / Observation / Understanding, Word Model / State Representation, Memory, Goal / Objective / Reasoning / Planning / Configurator / Path planning / Decision-Making / Policy / Governance and Guardrails, Orchestration and Communication, Tool Interference / Act / Control & Manipulation / Action/Actuation: Feedback / Observation Loop / Reflection / Self-Monitoring, Learning / Continual learning / Active learning / Reinforcement / Adaptation. My ultimate vision is to create specialized **robots / agents** capable of investigating the fundamental laws of nature and addressing the challenges faced by living beings.
 
+**Goal-1: Find unified architecture/algorithm of everything(AoE) that capture patterns across modalities(fields, states > information > Siganl: audio,image,video, sensors data...
+Abstract: text, code, math equations, database entries...), tasks(perception, reasoning, planning, action...), learning(supervised, unsupervised, reinforcement...): over/across time-space/spatio-temporal.**
 
-**Specialized robots/agents loop: Multimodal: Perception → Reasoning → Action → Learning**
-
-**Goal: Find unified architecture/algorithm of everything(AoE) that capture patterns across modalities(fields,states > information>Siganl: audio,image,video, sensors data...
-Abstract: text, code, math equations, database entries...), tasks(perception, reasoning, planning, action...), learning(supervised,unsupervised,reinforcement...): over/across time-space/spatio-temporal.**
+**Goal-2: Specialized robots/agents(Mathematical Modeling of Humans/Animals(Cognition Neuroscience, Computer Science, Robotics)**: Multimodal:  Perception / Observation / Understanding, Word Model / State Representation, Memory, Goal / Objective / Reasoning / Planning / Configurator / Path planning / Decision-Making / Policy / Governance and Guardrails, Orchestration and Communication, Tool Interference / Act / Control & Manipulation / Action/Actuation: Feedback / Observation Loop / Reflection / Self-Monitoring, Learning / Continual learning / Active learning / Reinforcement / Adaptation. My ultimate vision is to create specialized **robots / agents** capable of investigating the fundamental laws of nature and addressing the challenges faced by living beings. **In short: Specialized robots/agents loop: Multimodal: Perception → Reasoning → Action → Learning**
 
 I approach problem-solving in three steps(Divide any task into small functional/module):
 
