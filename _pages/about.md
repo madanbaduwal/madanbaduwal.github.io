@@ -31,10 +31,12 @@ Abstract: text, code, math equations, database entries...), tasks(perception, re
 
 **Goal-2: Specialized robots / agents(Mathematical Modeling of Humans / Animals : Cognition Neuroscience, Computer Science, Robotics)**: Multimodal:  Perception / Observation / Understanding, Word Model / State Representation, Memory, Goal / Objective / Reasoning / Planning / Configurator / Path planning / Decision-Making / Policy / Governance and Guardrails, Orchestration and Communication, Tool Interference / Act / Control & Manipulation / Action/Actuation: Feedback / Observation Loop / Reflection / Self-Monitoring, Learning / Continual learning / Active learning / Reinforcement / Adaptation. My ultimate vision is to create specialized **robots / agents** capable of investigating the fundamental laws of nature and addressing the challenges faced by living beings. **In short: Specialized robots / agents loop: Multimodal: Perception → Reasoning → Action → Learning**
 
+**Goal-3: Prove Goal-1 and Goal-2 (Statements)**
+
 I approach problem-solving in three steps(Divide any task into small functional/module):
 
 **Input Space**  
-- **Mathematics**: represent any kind of data as numbers (-infinity ... 0 ... +infinity)
+- **Mathematics**: represent any kind of data / problem as sets / numbers (-infinity ... 0 ... +infinity)
 - **Computer Science**: store it in data structures like **list**, **dictionary**, **set**, **tuple**… or finally in **bits** (e.g., `100101`)
 
 **Processing**  
@@ -42,7 +44,7 @@ I approach problem-solving in three steps(Divide any task into small functional/
 - **Computer Science**: apply **algorithms** to the input space
 
 **Output Space**  
-- **Mathematics**: represent any kind of data as numbers (-infinity... 0 ... +infinity)  
+- **Mathematics**: represent any kind of data as sets / numbers (-infinity... 0 ... +infinity)  
 - **Computer Science**: store it in data structures like **list**, **dictionary**, **set**, **tuple**… or finally in **bits** (e.g., `100101`)
 
 
