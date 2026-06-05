@@ -32,7 +32,7 @@ social: true # includes social icons at the bottom of the page
 ">
   <img src="https://raw.githubusercontent.com/madanbaduwal/madanbaduwal.github.io/refs/heads/master/assets/img/Learning.png"
        alt="Iron Man concept"
-       style="max-width: 700px; width: 90%; height: auto; border-radius: 10px;">
+       style="max-width: 500px; width: 70%; height: auto; border-radius: 10px;">
 </div>
 
 My journey began with a deep fascination for physics, chemistry, and biology-further inspired by philosophy, psychology, cognitive science, and neuroscience,-and a desire to understand the fundamental rules of nature and to solve meaningful problems across domains such as healthcare / medicine, engineering, entertainment, agriculture, social computing, economics & finance....
