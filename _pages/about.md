@@ -19,11 +19,22 @@ latest_posts: true # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
-<div style="text-align: center; margin: 20px 0;">
+<div style="
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+">
   <img src="https://raw.githubusercontent.com/madanbaduwal/madanbaduwal.github.io/refs/heads/master/assets/img/Learning.png"
        alt="Iron Man concept"
-       style="max-width: 70%; height: auto; border-radius: 10px;">
+       style="max-width: 700px; width: 90%; height: auto; border-radius: 10px;">
 </div>
+
 My journey began with a deep fascination for physics, chemistry, and biology-further inspired by philosophy, psychology, cognitive science, and neuroscience,-and a desire to understand the fundamental rules of nature and to solve meaningful problems across domains such as healthcare / medicine, engineering, entertainment, agriculture, social computing, economics & finance....
 
 
