@@ -48,7 +48,7 @@ Today, I use Mathematics (sets, linear algebra, calculus, probability & statisti
 I approach problem-solving in three steps(Divide any task into small functional/module):
 
 Input Space  
-- Mathematics: represent any kind of data / problem as sets / numbers (-infinity ... 0 ... +infinity)
+- Mathematics: represent any kind of data into Scalar, Vector, Matrix, Tensor, Set, Sequence, Tree, Graph, Point, Manifold, Metric Space, Distribution, Random Variable, Logic, Language, Knowledge Graph, Relation, Table, Topological Space, Simplicial Complex, Group, Ring, Field, Category, Morphism. (-infinity ... 0 ... +infinity)
 - Computer Science: store it in data structures like list, dictionary, set, tuple… or finally in bits (e.g., `100101`)
 
 Processing  
@@ -56,7 +56,7 @@ Processing
 - Computer Science: apply algorithms to the input space
 
 Output Space  
-- Mathematics: represent any kind of data as sets / numbers (-infinity... 0 ... +infinity)  
+- Mathematics: represent any kind of data into Scalar, Vector, Matrix, Tensor, Set, Sequence, Tree, Graph, Point, Manifold, Metric Space, Distribution, Random Variable, Logic, Language, Knowledge Graph, Relation, Table, Topological Space, Simplicial Complex, Group, Ring, Field, Category, Morphism. (-infinity... 0 ... +infinity)  
 - Computer Science: store it in data structures like list, dictionary, set, tuple… or finally in bits (e.g., `100101`)
 
 
