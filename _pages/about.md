@@ -38,7 +38,7 @@ social: true # includes social icons at the bottom of the page
 
 My journey began with a deep fascination for physics, chemistry, and biology-further inspired by philosophy, psychology, cognitive science, and neuroscience, and a desire to understand the **natural phenomenon / fundamental rules of nature / fundamental rule of physics by Observation** and to solve meaningful **motivations / problems** across domains such as healthcare/medicine, engineering, entertainment, agriculture, social computing, economics & finance....
 
-I am currently pursuing a Ph.D. in Computer Science at Mississippi State University (MSU), where my research spans signal processing, algorithms, machine learning, wireless communications, and robotics. Previously, I served as a Graduate Research Assistant at the University of Texas Permian Basin (UTPB) under the supervision of [Prof. Quan Yuan](https://www.utpb.edu/directory/faculty-staff/yuan_q) while completing my Master's degree in Computer Science. I hold a Bachelor's degree in Computer Engineering from Tribhuvan University, where I worked under the guidance of [Prof. Sanjeev Prasad Panday](https://scholar.google.com/citations?user=oTWWLT8AAAAJ&hl=en). I have also had the opportunity to collaborate with [Mahabir Pun](https://en.wikipedia.org/wiki/Mahabir_Pun) on vision robotics.
+I am currently pursuing a Ph.D. in Computer Science at Mississippi State University (MSU), where my research spans signal processing, algorithms & ML, Computing, wireless communications, and robotics. Previously, I served as a Graduate Research Assistant at the University of Texas Permian Basin (UTPB) under the supervision of [Prof. Quan Yuan](https://www.utpb.edu/directory/faculty-staff/yuan_q) while completing my Master's degree in Computer Science. I hold a Bachelor's degree in Computer Engineering from Tribhuvan University, where I worked under the guidance of [Prof. Sanjeev Prasad Panday](https://scholar.google.com/citations?user=oTWWLT8AAAAJ&hl=en). I have also had the opportunity to collaborate with [Mahabir Pun](https://en.wikipedia.org/wiki/Mahabir_Pun) on vision robotics.
 
 
 English, mathematics, and computer science (CS) soon became the languages through which I explored this curiosity. 
@@ -48,7 +48,7 @@ Today, I use Mathematics (sets, linear algebra, calculus, probability & statisti
 I approach problem-solving in three steps(Divide any task into small functional/module):
 
 Input Space  
-- Mathematics: represent any kind of nature of some phenomenon / data into Scalar, Vector, Matrix, Tensor, Set, Sequence, Tree, Graph, Point, Manifold, Metric Space, Distribution, Random Variable, Logic, Language, Knowledge Graph, Relation, Table, Topological Space, Simplicial Complex, Group, Ring, Field, Category, Morphism. (-infinity ... 0 ... +infinity)
+- Mathematics: represent any kind of natural phenomenon / signal / data into Scalar, Vector, Matrix, Tensor, Set, Sequence, Tree, Graph, Point, Manifold, Metric Space, Distribution, Random Variable, Logic, Language, Knowledge Graph, Relation, Table, Topological Space, Simplicial Complex, Group, Ring, Field, Category, Morphism. (-infinity ... 0 ... +infinity)
 - Computer Science: store it in data structures like list, dictionary, set, tuple… or finally in bits (e.g., `100101`)
 
 Processing  
@@ -56,7 +56,7 @@ Processing
 - Computer Science: apply algorithms to the input space
 
 Output Space  
-- Mathematics: represent any kind of nature of some phenomenon / data into Scalar, Vector, Matrix, Tensor, Set, Sequence, Tree, Graph, Point, Manifold, Metric Space, Distribution, Random Variable, Logic, Language, Knowledge Graph, Relation, Table, Topological Space, Simplicial Complex, Group, Ring, Field, Category, Morphism. (-infinity... 0 ... +infinity)  
+- Mathematics: represent any kind of natural phenomenon / signal / data into Scalar, Vector, Matrix, Tensor, Set, Sequence, Tree, Graph, Point, Manifold, Metric Space, Distribution, Random Variable, Logic, Language, Knowledge Graph, Relation, Table, Topological Space, Simplicial Complex, Group, Ring, Field, Category, Morphism. (-infinity... 0 ... +infinity)  
 - Computer Science: store it in data structures like list, dictionary, set, tuple… or finally in bits (e.g., `100101`)
 
 
