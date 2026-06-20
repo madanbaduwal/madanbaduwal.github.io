@@ -36,7 +36,7 @@ social: true # includes social icons at the bottom of the page
        ">
 </div>
 
-My journey began with a deep fascination for physics, chemistry, and biology-further inspired by philosophy, psychology, cognitive science, and neuroscience, and a desire to understand the **nature of some phenomenon / Observation / fundamental rules of nature** and to solve meaningful **motivations / problems** across domains such as healthcare/medicine, engineering, entertainment, agriculture, social computing, economics & finance....
+My journey began with a deep fascination for physics, chemistry, and biology-further inspired by philosophy, psychology, cognitive science, and neuroscience, and a desire to understand the **natural phenomenon / fundamental rules of nature / fundamental rule of physics by Observation** and to solve meaningful **motivations / problems** across domains such as healthcare/medicine, engineering, entertainment, agriculture, social computing, economics & finance....
 
 I am currently pursuing a Ph.D. in Computer Science at Mississippi State University (MSU), where my research spans signal processing, algorithms, machine learning, wireless communications, and robotics. Previously, I served as a Graduate Research Assistant at the University of Texas Permian Basin (UTPB) under the supervision of [Prof. Quan Yuan](https://www.utpb.edu/directory/faculty-staff/yuan_q) while completing my Master's degree in Computer Science. I hold a Bachelor's degree in Computer Engineering from Tribhuvan University, where I worked under the guidance of [Prof. Sanjeev Prasad Panday](https://scholar.google.com/citations?user=oTWWLT8AAAAJ&hl=en). I have also had the opportunity to collaborate with [Mahabir Pun](https://en.wikipedia.org/wiki/Mahabir_Pun) on vision robotics.
 
@@ -65,6 +65,6 @@ Abstract: text, code, math equations, database entries...), tasks(perception, re
 
 Goal-2: Specialized robots / agents(Mathematical Modeling of Humans / Animals : Cognition Neuroscience, Computer Science, Robotics): Multimodal:  Perception / Observation / Understanding, Word Model / State Representation, Memory, Goal / Objective / Reasoning / Planning / Configurator / Path planning / Decision-Making / Policy / Governance and Guardrails, Orchestration and Communication, Tool Interference / Act / Control & Manipulation / Action/Actuation: Feedback / Observation Loop / Reflection / Self-Monitoring, Learning / Continual learning / Active learning / Reinforcement / Adaptation. My ultimate vision is to create specialized robots / agents capable of investigating the fundamental laws of nature and addressing the challenges faced by living beings. In short: Specialized robots / agents loop: Multimodal: **Perception → Reasoning → Action → Learning**
 
-Goal-3: Prove Goal-1 and Goal-2 (Statements)
+Goal-3: Prove / Evaluate / Validate / Analysis / Causality Goal-1 and Goal-2 (Statements)
 
 If you’re interested in discussing research or potential collaborations, feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/madanbaduwal) or [Twitter](https://twitter.com/MadanBaduwal1), or reach out via email at madanbaduwal100@gmail.com.
