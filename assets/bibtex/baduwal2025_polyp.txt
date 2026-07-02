@@ -1,0 +1,8 @@
+@article{baduwal2025hybrid,
+  title={Hybrid (Transformer+ CNN)-based Polyp Segmentation},
+  author={Baduwal, Madan},
+  journal={arXiv preprint arXiv:2508.09189},
+  year={2025},
+  month={aug},
+  url={https://arxiv.org/abs/2508.09189}
+}

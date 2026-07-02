@@ -1,0 +1,9 @@
+@inproceedings{baduwal2026lightweight,
+  author    = {Madan Baduwal and Vini Chaudhary},
+  title     = {Lightweight Multimodal Radar Interference Detection at Low SINRs},
+  booktitle = {Proceedings of the IEEE International Conference on Communications (ICC)},
+  year      = {2026},
+  address   = {Scotland, UK},
+  month     = may,
+  publisher = {IEEE}
+}

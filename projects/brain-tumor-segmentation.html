@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Tumor Segmentation - Madan Baduwal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../blog-style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../" class="nav-brand">Madan Baduwal</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="../#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="../#research" class="nav-link">Research</a></li>
+                <li class="nav-item"><a href="../#pet-projects" class="nav-link">Pet Projects</a></li>
+                <li class="nav-item"><a href="../#blogs" class="nav-link">Blogs</a></li>
+                <li class="nav-item"><a href="../assets/cv.pdf" class="nav-link" target="_blank" rel="noopener">CV</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon" id="theme-icon"></i>
+            </button>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="blog-container">
+        <a href="../#pet-projects" class="back-link back-button"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+        
+        <div class="project-header blog-header">
+            <h1>Brain Tumor Segmentation</h1>
+            <p class="project-subtitle">🧠 Brain tumor detection and segmentation.</p>
+        </div>
+        
+        <article class="project-content blog-content">
+            <img src="../assets/images/blogs/madan/Brain-tumor-segmentation.png" alt="Brain Tumor Segmentation" class="project-image">
+            
+            <p>In the contemporary landscape, brain tumors have emerged as a prominent cause of global mortality. These tumors manifest through abnormal growth of brain cells, profoundly impacting neighboring cells. This growth can encompass both cancerous and non-cancerous cell types, with symptoms varying based on factors such as location, size, and type. Detecting and precisely classifying brain tumors at their onset poses a formidable challenge due to their intricate and diverse structures, aimed at mitigating the potential loss of life.</p>
+
+            <p>To address this challenge, this study proposes an enhanced model leveraging Convolutional Neural Networks (CNN) fused with ResNet50 and U-Net architectures. This model operates on the TCGA-LGG and TCIA datasets, publicly available repositories comprising data from 120 patients. The devised CNN, along with the fine-tuned ResNet50 model, is employed for the detection and classification of tumor or non-tumor images. Additionally, the integration of the U-Net model facilitates accurate segmentation of tumor regions.</p>
+
+            <p>Evaluation of model performance is conducted using metrics including accuracy, Intersection over Union (IoU), Dice Similarity Coefficient (DSC), and Similarity Index (SI). Results from the fine-tuned ResNet50 model showcase impressive metrics: IoU of 0.91, DSC of 0.95, and SI of 0.95. Notably, the U-Net model in conjunction with ResNet50 surpasses all other models, exhibiting superior performance in correctly classifying and segmenting tumor regions.</p>
+
+            <div class="embed-responsive">
+                <iframe src="https://www.youtube.com/embed/YXQyyHQM8YQ?si=ey04Bm1BFgo2A1Gd" title="Brain Tumor Segmentation demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+            <h2>Run Project</h2>
+            <p>The GitHub repository can also be found here:</p>
+            <p><a href="https://github.com/madanbaduwal/brain-tumor-segmentation" class="project-link" target="_blank" rel="noopener">View Repository</a></p>
+
+            <pre><code>git clone https://github.com/madanbaduwal/brain-tumor-segmentation
+
+cd project
+
+python -m venv myenv
+source myenv/bin/activate
+pip3 install -r requirements.txt
+
+streamlit run app.py</code></pre>
+        </article>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Madan Baduwal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        const body = document.body;
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const navbar = document.querySelector('.navbar');
+
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        if (currentTheme === 'dark') {
+            body.setAttribute('data-theme', 'dark');
+            themeIcon.classList.replace('fa-moon', 'fa-sun');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            const theme = body.getAttribute('data-theme');
+            if (theme === 'dark') {
+                body.removeAttribute('data-theme');
+                themeIcon.classList.replace('fa-sun', 'fa-moon');
+                localStorage.setItem('theme', 'light');
+            } else {
+                body.setAttribute('data-theme', 'dark');
+                themeIcon.classList.replace('fa-moon', 'fa-sun');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                if (link.getAttribute('href').startsWith('#')) {
+                    navMenu.classList.remove('active');
+                    hamburger.classList.remove('active');
+                }
+            });
+        });
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+            } else {
+                navbar.style.boxShadow = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

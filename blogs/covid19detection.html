@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A computer vision system is designed to analyze chest X-ray images and determine whether a person is positive or negative for COVID-19.">
+    <meta name="author" content="Madan Baduwal">
+    <title>Covid-19 Detection - Madan Baduwal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../blog-style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../" class="nav-brand">Madan Baduwal</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="../#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="../#research" class="nav-link">Research</a></li>
+                <li class="nav-item"><a href="../#pet-projects" class="nav-link">Pet Projects</a></li>
+                <li class="nav-item"><a href="../#blogs" class="nav-link">Blogs</a></li>
+                <li class="nav-item"><a href="../assets/cv.pdf" class="nav-link" target="_blank" rel="noopener">CV</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon" id="theme-icon"></i>
+            </button>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="blog-container">
+        <a href="../#blogs" class="back-button">
+            <i class="fas fa-arrow-left"></i>
+            Back to Blogs
+        </a>
+
+        <header class="blog-header">
+            <h1 class="blog-title">Covid-19 Detection</h1>
+            <p class="project-subtitle">🦠 🏥 A computer vision system is designed to analyze chest X-ray images and determine whether a person is positive or negative for COVID-19.</p>
+            <div class="blog-meta">
+                <div class="blog-date">
+                    <i class="fas fa-calendar"></i>
+                    December 22, 2020
+                </div>
+            </div>
+            <div class="blog-tags">
+                <span class="blog-tag">AI</span>
+                <span class="blog-tag">CNN</span>
+                <span class="blog-tag">Computer Vision</span>
+            </div>
+        </header>
+
+        <article class="blog-content">
+            <img src="../assets/images/blogs/madan/covid_detection.png" alt="Covid-19 Detection preview">
+
+            <p>This assignment focuses on creating a machine learning model to classify COVID-19 lung X-ray images stored in Google Drive. Our objective is to perform binary classification of COVID-19 lung images from Kaggle datasets.</p>
+
+            <p>Mount drive</p>
+            <pre class="python"><code># Mount drive
+from google.colab import drive
+drive.mount('/drive')
+</code></pre>
+
+            <h1>Dataset Description</h1>
+            <hr>
+            <p>Here, we are going to use the raw <code>COVID-19 Patients Lungs X Ray Images 10000</code> data from Kaggle.</p>
+            <p><strong>License</strong> Data files © Original Authors</p>
+            <p><strong>Citation:</strong></p>
+            <pre><code>@Kaggle,
+  url       = {https://www.kaggle.com/nabeelsajid917/covid-19-x-ray-10000-images?select=dataset}
+}
+</code></pre>
+
+            <h2>Load raw (provided) Dataset</h2>
+            <hr>
+            <p>Here we have provided dataset:</p>
+            <p>Corona positive: 70</p>
+            <p>Corona negative: 28</p>
+
+            <h1>Data Augumentation</h1>
+            <hr>
+            <p>We have provided 70 positive images and 28 negatives. If we apply CNN we need lots of data set so, we need data augmentation to increase the training sample. Augmentation is the process of increasing training samples by flipping, color modification, cropping, rotation, noise injection, and random erasing.</p>
+            <pre class="python"><code>from keras.preprocessing.image import ImageDataGenerator
+from keras.preprocessing.image import img_to_array
+from imutils import paths
+import numpy as np
+import cv2
+import os
+
+def data_augumentation(input_path, output_path):
+    '''
+    Augument the give data.
+
+    ## Parameters:
+      input_path (str) : input files path
+      output_path (str) : output files path
+    '''
+    imagePaths = list(paths.list_images(input_path))
+    data = []
+
+    for imagePath in imagePaths:
+        label = imagePath.split(os.path.sep)[-2]
+        image = cv2.imread(imagePath)
+        data.append(image)
+
+    for image in data:
+        print("[INFO] loading example image...")
+        image = img_to_array(image)
+        image = np.expand_dims(image, axis = 0)
+        aug = ImageDataGenerator(
+            rotation_range = 30,
+            zoom_range = 0.15,
+            width_shift_range = 0.2,
+            height_shift_range = 0.2,
+            shear_range = 0.15,
+            horizontal_flip = True,
+            fill_mode = "nearest")
+        total = 0
+        print("[INFO] generating images...")
+        imageGen = aug.flow(
+            image,
+            batch_size = 1,
+            save_to_dir = output_path,
+            save_prefix = "image",
+            save_format = "jpg")
+        for image in imageGen:
+            total += 1
+            if total == 5:
+                break
+</code></pre>
+
+            <p>Covid positive and negative data augmentation:</p>
+            <pre class="python"><code>Paths = [("/drive/My Drive/covid/raw/covid",
+        "/drive/My Drive/covid/processed/covid"),
+       ("/drive/My Drive/covid/raw/normal",
+        "/drive/My Drive/covid/processed/normal")]
+for i in Paths:
+  data_augumentation(i[0],i[1])
+</code></pre>
+            <p>Augmented data and save it into the processed folder.</p>
+
+            <h1>Load augumented (processed) Datasets</h1>
+            <p>Here after augumentation we had saved augumented dataset into the processed folder. Load augumented (processed) dataset.</p>
+            <pre class="python"><code>def get_data(input_path):
+    '''
+    Get data from given path.
+
+    ## Parameters:
+      input_path (str) : input files path
+
+    ## Returns
+       data (array) : image array
+       labels (array) : label array
+    '''
+    imagePaths = list(paths.list_images(input_path))
+    data = []
+    labels = []
+
+    for imagePath in imagePaths:
+        label = imagePath.split(os.path.sep)[-2]
+        image = cv2.imread(imagePath)
+        image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+        image = cv2.resize(image, (128, 128))
+        data.append(image)
+        labels.append(label)
+    return data,labels
+</code></pre>
+
+            <h1>Data preprocessing</h1>
+            <hr>
+            <p>In this section, you will complete a <code>data_preprocessing</code> function to clean the data and labels.</p>
+            <ul>
+                <li>Normalize all data dividing by 255.0 (convert image into binary image).</li>
+                <li>Binarize the label using <code>LabelBinarizer()</code>.</li>
+                <li>Convert binarized labels into categorical vectors.</li>
+            </ul>
+            <pre class="python"><code>from tensorflow.keras.utils import to_categorical
+from sklearn.preprocessing import LabelBinarizer
+
+def data_preprocessing(data,labels):
+    '''
+    Preprocess the given data.
+
+    ## Parameters:
+      data (array) : input image dataset
+      labels (array) : array of labels
+
+    ## Returns
+       data (array) : processed array of images
+       labels (array) : processd array of labels
+    '''
+    data = np.array(data) / 255.0
+    labels = np.array(labels)
+    lb = LabelBinarizer()
+    labels = lb.fit_transform(labels)
+    labels = to_categorical(labels)
+
+    return data,labels,lb
+</code></pre>
+
+            <h1>Train-Test split</h1>
+            <hr>
+            <p>We use sklearn <code>train_test_split</code> function to split data into train and test.</p>
+            <pre class="python"><code>from sklearn.model_selection import train_test_split
+
+def data_split(data,labels):
+    (trainX, testX, trainY, testY) = train_test_split(
+        data,
+        labels,
+        test_size=0.20,
+        stratify=labels,
+        random_state=42
+    )
+
+    return (trainX, testX, trainY, testY)
+</code></pre>
+            <pre class="python"><code>input_path = "/drive/My Drive/covid/processed"
+data,labels = get_data(input_path)
+data,labels,lb = data_preprocessing(data,labels)
+(trainX, testX, trainY, testY) = data_split(data,labels)
+</code></pre>
+
+            <h1>Create models</h1>
+            <hr>
+            <h2>VGG16</h2>
+            <pre class="python"><code>from tensorflow.keras.applications import VGG16
+from tensorflow.keras.layers import AveragePooling2D
+from tensorflow.keras.layers import Dropout
+from tensorflow.keras.layers import Flatten
+from tensorflow.keras.layers import Dense
+from tensorflow.keras.layers import Input
+from tensorflow.keras.models import Model
+from tensorflow.keras.optimizers import Adam
+
+class Model_VGG16:
+    def __init__(self,int_lr,epochs,bs):
+
+        self.int_lr = int_lr # learning rate
+        self.epochs = epochs
+        self.bs = bs
+        baseModel = VGG16(weights="imagenet", include_top=False,
+                          input_tensor=Input(shape=(128, 128, 3)))
+
+        headModel = baseModel.output
+        headModel = AveragePooling2D(pool_size=(4, 4))(headModel)
+        headModel = Flatten(name="flatten")(headModel)
+        headModel = Dense(64, activation="relu")(headModel)
+        headModel = Dropout(0.5)(headModel)
+        headModel = Dense(2, activation="softmax")(headModel)
+        self.model = Model(inputs=baseModel.input, outputs=headModel)
+
+        for layer in baseModel.layers:
+            layer.trainable = False
+        print("[INFO] compiling model...")
+        opt = Adam(lr=self.int_lr, decay=self.int_lr / self.epochs)
+        self.model.compile(loss="binary_crossentropy", optimizer=opt,
+                      metrics=["accuracy"])
+
+    def fit(self,trainX, trainY,testX,testY):
+        trainAug = ImageDataGenerator(
+            rotation_range=15,
+            fill_mode="nearest")
+        print("[INFO] training head...")
+        History = self.model.fit_generator(
+            trainAug.flow(trainX, trainY, batch_size=self.bs),
+            steps_per_epoch=len(trainX) // self.bs,
+            validation_data = (testX, testY),
+            validation_steps=len(testX) // self.bs,
+            epochs=self.epochs)
+        return History
+
+    def predict(self,testX):
+         return self.model.predict(testX, batch_size=self.bs)
+
+    def save_model(self):
+        print("[INFO] saving COVID-19 detector model...")
+        self.model.save("model.h5")
+</code></pre>
+
+            <h1>Model evaluation</h1>
+            <hr>
+            <pre class="python"><code>from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+import matplotlib.pyplot as plt
+
+def model_evaluation(History, predIdxs, lb,testX,testY):
+
+    print("[INFO] evaluating network...")
+    predIdxs = np.argmax(predIdxs, axis=1)
+    print(classification_report(testY.argmax(axis=1), predIdxs,
+                                target_names=lb.classes_))
+
+    cm = confusion_matrix(testY.argmax(axis=1), predIdxs)
+    total = sum(sum(cm))
+    acc = (cm[0, 0] + cm[1, 1]) / total
+    sensitivity = cm[0, 0] / (cm[0, 0] + cm[0, 1])
+    specificity = cm[1, 1] / (cm[1, 0] + cm[1, 1])
+    print(cm)
+    print("acc: {:.4f}".format(acc))
+    print("sensitivity: {:.4f}".format(sensitivity))
+    print("specificity: {:.4f}".format(specificity))
+    # plot the training loss and accuracy
+    N = EPOCHS
+    plt.style.use("ggplot")
+    plt.figure()
+    plt.plot(np.arange(0, N), History.history["loss"], label="train_loss")
+    # plt.plot(np.arange(0, N), History.history["val_loss"], label="val_loss")
+    plt.plot(np.arange(0, N), History.history["accuracy"], label="train_acc")
+    # plt.plot(np.arange(0, N), History.history["val_accuracy"], label="val_acc")
+    plt.title("Training Loss and Accuracy on COVID-19 Dataset")
+    plt.xlabel("Epoch #")
+    plt.ylabel("Loss/Accuracy")
+    plt.legend(loc="lower left")
+</code></pre>
+
+            <h1>ML pipeline</h1>
+            <hr>
+            <pre class="python"><code>INIT_LR = 1e-3
+EPOCHS = 100
+BS = 128
+model_vgg16 = Model_VGG16(INIT_LR,EPOCHS,BS)
+History = model_vgg16.fit(trainX, trainY,testX,testY)
+predIdxs = model_vgg16.predict(testX)
+#print(History.history.keys())
+</code></pre>
+            <pre class="python"><code>model_evaluation(History, predIdxs, lb,testX,testY)
+</code></pre>
+        </article>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Madan Baduwal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        const body = document.body;
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const navbar = document.querySelector('.navbar');
+
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        if (currentTheme === 'dark') {
+            body.setAttribute('data-theme', 'dark');
+            themeIcon.classList.replace('fa-moon', 'fa-sun');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            const theme = body.getAttribute('data-theme');
+            if (theme === 'dark') {
+                body.removeAttribute('data-theme');
+                themeIcon.classList.replace('fa-sun', 'fa-moon');
+                localStorage.setItem('theme', 'light');
+            } else {
+                body.setAttribute('data-theme', 'dark');
+                themeIcon.classList.replace('fa-moon', 'fa-sun');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+
+        navLinks.forEach((link) => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+@article{shrestha2025diversified,
+  title={Diversified Flow Matching with Translation Identifiability},
+  author={Shrestha, Sagar and Fu, Xiao},
+  journal={International Conference on Machine Learning},
+  year={2025}
+}
