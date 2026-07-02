@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI eye - Madan Baduwal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../blog-style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../" class="nav-brand">Madan Baduwal</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="../#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="../#research" class="nav-link">Research</a></li>
+                <li class="nav-item"><a href="../#pet-projects" class="nav-link">Pet Projects</a></li>
+                <li class="nav-item"><a href="../#blogs" class="nav-link">Blogs</a></li>
+                <li class="nav-item"><a href="../assets/cv.pdf" class="nav-link" target="_blank" rel="noopener">CV</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon" id="theme-icon"></i>
+            </button>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="blog-container">
+        <a href="../#pet-projects" class="back-link back-button"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+        
+        <div class="project-header blog-header">
+            <h1>AI eye</h1>
+            <p class="project-subtitle">👁️ One function for multiple computer vision tasks; object detection, face recognition, depth calculation, object tracking, and more.</p>
+        </div>
+        
+        <article class="project-content blog-content">
+            <img src="../assets/images/blogs/madan/eye-image.png" alt="AI eye" class="project-image">
+            
+            <p>Creating a model that replicates the functionality of the human eye is challenging. Tasks such as object detection, face recognition, depth calculation, and object tracking are complex and typically require separate machine learning models. In this project, I aim to integrate multiple computer vision models into a single function to emulate the capabilities of the human eye.</p>
+
+            <div class="embed-responsive">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zY7WrGS0VTw" allowfullscreen autoplay></iframe>
+            </div>
+
+            <h2>Installation and Configuration</h2>
+            <p>The GitHub repository can also be found here:</p>
+            <p><a href="https://github.com/MadanBaduwal/eye" class="project-link" target="_blank" rel="noopener">View Repository</a></p>
+
+            <p>To install the current release:</p>
+            <pre><code>python3 -m venv venv
+source venv/bin/activate
+pip3 install requirements.txt
+
+pip3 freeze &gt; requirements.txt # after add some feature freeze all dependencies</code></pre>
+
+            <p>Or:</p>
+            <pre><code>poetry install</code></pre>
+
+            <h2>Usage</h2>
+            <p>Move toward the project folder:</p>
+            <pre><code>cd eye</code></pre>
+
+            <p>Run the single function that performs the computer vision tasks:</p>
+            <pre><code>python inference.py</code></pre>
+
+            <h2>Hardware Devices</h2>
+            <ol>
+                <li><a href="https://coral.ai/" target="_blank" rel="noopener">Coral TPU</a> for object detection.</li>
+                <li><a href="https://www.intelrealsense.com/depth-camera-d435/" target="_blank" rel="noopener">Intel RealSense Depth Camera D435</a> for calculating image depth.</li>
+                <li><a href="https://pypi.org/project/face-recognition/" target="_blank" rel="noopener">Face recognition library</a> for face recognition.</li>
+                <li>Object tracking custom algorithm for object tracking.</li>
+            </ol>
+        </article>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Madan Baduwal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        const body = document.body;
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const navbar = document.querySelector('.navbar');
+
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        if (currentTheme === 'dark') {
+            body.setAttribute('data-theme', 'dark');
+            themeIcon.classList.replace('fa-moon', 'fa-sun');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            const theme = body.getAttribute('data-theme');
+            if (theme === 'dark') {
+                body.removeAttribute('data-theme');
+                themeIcon.classList.replace('fa-sun', 'fa-moon');
+                localStorage.setItem('theme', 'light');
+            } else {
+                body.setAttribute('data-theme', 'dark');
+                themeIcon.classList.replace('fa-moon', 'fa-sun');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                if (link.getAttribute('href').startsWith('#')) {
+                    navMenu.classList.remove('active');
+                    hamburger.classList.remove('active');
+                }
+            });
+        });
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+            } else {
+                navbar.style.boxShadow = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

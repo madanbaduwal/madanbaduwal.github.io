@@ -1,0 +1,10 @@
+@Article{computers15030155,
+  author = {Baduwal, Madan and Paudel, Priyanka and Chaudhary, Vini},
+  title = {Federated Learning: A Survey of Core Challenges, Current Methods, and Opportunities},
+  journal = {Computers},
+  volume = {15},
+  year = {2026},
+  number = {3},
+  article-number = {155},
+  url = {https://www.mdpi.com/2073-431X/15/3/155}
+}

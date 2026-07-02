@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The personal academic website of Madan Baduwal - PhD Student in Computer Science at Mississippi State University">
+    <meta name="author" content="Madan Baduwal">
+    <title>Madan Baduwal - Computer Science PhD Student</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#about" class="nav-brand">Madan Baduwal</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#research" class="nav-link">Research</a></li>
+                <li class="nav-item"><a href="#pet-projects" class="nav-link">Pet Projects</a></li>
+                <li class="nav-item"><a href="#blogs" class="nav-link">Blogs</a></li>
+                <li class="nav-item"><a href="#meeting" class="nav-link">Meeting</a></li>
+                <li class="nav-item"><a href="assets/cv.pdf" class="nav-link" target="_blank" rel="noopener">CV</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon" id="theme-icon"></i>
+            </button>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="about" class="profile-timeline">
+        <div class="container">
+            <div class="profile-header">
+                <div class="profile-image-container">
+                    <img src="assets/sagar.jpg" alt="Madan Baduwal" class="profile-image">
+                </div>
+                <div class="profile-info">
+                    <h1 class="profile-name">Madan Baduwal</h1>
+                    <p class="profile-tagline">
+                        PhD in CSE |
+                        <a href="https://www.msstate.edu/" target="_blank" rel="noopener">Mississippi State University</a>
+                    </p>
+                    <img src="assets/unification.png" alt="MSU, UTPB, and Fusemachines affiliation" style="max-width: 100%; height: auto; margin-bottom: 1.5rem;">
+                    <div class="social-links">
+                        <a href="https://scholar.google.com/citations?user=mIEdm2IAAAAJ&hl=en" class="social-link" target="_blank" rel="noopener" aria-label="Google Scholar">
+                            <i class="fas fa-graduation-cap"></i>
+                        </a>
+                        <a href="https://github.com/MadanBaduwal" class="social-link" target="_blank" rel="noopener" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:madanbaduwal100@gmail.com" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/madanbaduwal" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://youtube.com/@MadanBaduwal" class="social-link" target="_blank" rel="noopener" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://twitter.com/MadanBaduwal1" class="social-link" target="_blank" rel="noopener" aria-label="X (Twitter)">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-grid">
+                <div class="timeline-year">Jan 2025 - Present</div>
+                <div class="timeline-marker" aria-hidden="true">
+                    <img class="timeline-logo" src="assets/images/logos/msu_badge.svg" alt="MSU badge">
+                </div>
+                <div class="timeline-card">
+                    <p>
+                        PhD in Computer Science &amp; Engineering at <a href="https://www.msstate.edu/" target="_blank" rel="noopener">Mississippi State University</a>.
+                        Graduate Research Assistant working on Signal Processing, Algorithms/ML/Computing, Wireless Communication, Cybersecurity, and Robotics.
+                    </p>
+                </div>
+
+                <div class="timeline-year">Jan 2023 - Dec 2024</div>
+                <div class="timeline-marker" aria-hidden="true">
+                    <img class="timeline-logo" src="assets/images/logos/utpb_badge.svg" alt="UTPB badge">
+                </div>
+                <div class="timeline-card">
+                    <p>
+                        Graduate Research Assistant and Student Assistant Editor at <a href="https://www.utpb.edu/" target="_blank" rel="noopener">University of Texas Permian Basin</a> under
+                        <a href="https://www.utpb.edu/directory/faculty-staff/yuan_q" target="_blank" rel="noopener">Prof. Quan Yuan</a>. Researched polyp segmentation and multimodal AI by fine-tuning models including YOLOv8, U-Net, Detectron, CLIP, ViLBERT, LXMERT, BLIP, and LLaVA, curated university-ready text-image datasets, and supported publication editing for the UTPB Journal of Undergraduate Research and UG Research Book.
+                    </p>
+                </div>
+
+                <div class="timeline-year">Jan 2022 - Dec 2022</div>
+                <div class="timeline-marker" aria-hidden="true">
+                    <img class="timeline-logo" src="assets/images/logos/fusemachines.png" alt="Fusemachines badge">
+                </div>
+                <div class="timeline-card">
+                    <p>
+                        Senior Machine Learning Engineer at <a href="https://fusemachines.com/" target="_blank" rel="noopener">Fusemachines</a>. Led development of <a href="https://matrice.ai/" target="_blank" rel="noopener">Matrice.ai</a>, a no-code data-centric AI platform that cut deployment time by 40% and development cost by 80%, built ML SaaS products for 5+ hospitals, and automated otoscopy image segmentation that generated $100k annually.
+                    </p>
+                </div>
+
+                <div class="timeline-year">Jan 2021 - Dec 2021</div>
+                <div class="timeline-marker" aria-hidden="true">
+                    <img class="timeline-logo" src="assets/images/logos/nic.png" alt="National Innovation Center badge">
+                </div>
+                <div class="timeline-card">
+                    <p>
+                        Computer Vision Engineer (R&amp;D) at <a href="https://nicnepal.org/" target="_blank" rel="noopener">National Innovation Center</a>. Built vision and navigation systems for service robots, improving edge inference and pathfinding, including collaboration with <a href="https://en.wikipedia.org/wiki/Mahabir_Pun" target="_blank" rel="noopener">Mahabir Pun</a>.
+                    </p>
+                </div>
+
+                <div class="timeline-year">Feb 2020 - Feb 2022</div>
+                <div class="timeline-marker" aria-hidden="true">
+                    <img class="timeline-logo" src="assets/images/logos/fusemachines.png" alt="Fusemachines badge">
+                </div>
+                <div class="timeline-card">
+                    <p>
+                        Machine Learning Engineer at Fusemachines. Led AI systems for education and phishing detection, supported large-scale deployments, and delivered workshops, trainings, and machine learning content for thousands of learners.
+                    </p>
+                </div>
+
+                <div class="timeline-year">Aug 2019 - Feb 2020</div>
+                <div class="timeline-marker" aria-hidden="true">
+                    <img class="timeline-logo" src="assets/images/logos/omni.png" alt="Omnibluetech badge">
+                </div>
+                <div class="timeline-card">
+                    <p>
+                        Software Engineer Intern at Omnibluetech. Built Django APIs, AWS background workers, and web apps for document processing, retail, and consultancy systems.
+                    </p>
+                </div>
+
+                <div class="timeline-year">2015 - 2019</div>
+                <div class="timeline-marker" aria-hidden="true">
+                    <img class="timeline-logo" src="assets/images/logos/tu.png" alt="Tribhuvan University badge">
+                </div>
+                <div class="timeline-card">
+                    <p>
+                        BE in Computer Engineering at <a href="https://ioe.tu.edu.np/" target="_blank" rel="noopener">Tribhuvan University, Institute of Engineering</a>, working under
+                        <a href="https://scholar.google.com/citations?user=oTWWLT8AAAAJ&hl=en" target="_blank" rel="noopener">Prof. Sanjeev Prasad Panday</a>. This is also where I built my foundation in AI, software engineering, mathematics, and vision robotics.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="research" class="research">
+        <div class="container">
+            <h2 class="section-title">Select Publications</h2>
+            <div class="publications">
+                <div class="publication-card">
+                    <div class="publication-image">
+                        <img src="https://mdpi-res.com/computers/computers-15-00155/article_deploy/html/images/computers-15-00155-g001.png" alt="Federated Learning survey preview">
+                    </div>
+                    <div class="publication-content">
+                        <h3 class="publication-title">Federated Learning: A Survey of Core Challenges, Current Methods, and Opportunities</h3>
+                        <p class="publication-authors"><strong>Madan Baduwal</strong>, Priyanka Paudel, Vini Chaudhary</p>
+                        <p class="publication-venue">Computers, 2026</p>
+                        <p class="publication-description">
+                            A survey of the main systems and learning challenges in federated learning, covering practical constraints, current methods, and open opportunities for future work.
+                        </p>
+                        <div class="publication-links">
+                            <a href="https://www.mdpi.com/2073-431X/15/3/155" class="pub-link" target="_blank" rel="noopener">Paper</a>
+                            <a href="assets/bibtex/baduwal2026_federated.txt" class="pub-link" target="_blank" rel="noopener">Bibtex</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="publication-card">
+                    <div class="publication-image">
+                        <img src="assets/paper_figures/radar_detection.png" alt="Radar detection preview">
+                    </div>
+                    <div class="publication-content">
+                        <h3 class="publication-title">Lightweight Multimodal Radar Interference Detection at Low SINRs</h3>
+                        <p class="publication-authors"><strong>Madan Baduwal</strong>, Vini Chaudhary</p>
+                        <p class="publication-venue">IEEE International Conference on Communications (ICC), 2026</p>
+                        <p class="publication-description">
+                            A lightweight multimodal approach for radar interference detection in low-SINR settings, designed for communication-constrained and practical deployment scenarios.
+                        </p>
+                        <div class="publication-links">
+                            <a href="https://madanbaduwal.github.io/publications/" class="pub-link" target="_blank" rel="noopener">Publication</a>
+                            <a href="assets/bibtex/baduwal2026_radar.txt" class="pub-link" target="_blank" rel="noopener">Bibtex</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="publication-card">
+                    <div class="publication-image">
+                        <img src="assets/paper_figures/perfect_radar.png" alt="PERFECT radar preview">
+                    </div>
+                    <div class="publication-content">
+                        <h3 class="publication-title">PERFECT: Personalized Federated Learning for CBRS Radar Detection</h3>
+                        <p class="publication-authors">S. U. Khan, <strong>Madan Baduwal</strong>, V. Chaudhary, D. Roy</p>
+                        <p class="publication-venue">IEEE International Conference on Computer Communications and Networks (ICCCN), 2026</p>
+                        <p class="publication-description">
+                            Personalized federated learning for CBRS radar detection, focusing on participant heterogeneity and more adaptive local-global model behavior.
+                        </p>
+                        <div class="publication-links">
+                            <a href="https://arxiv.org/abs/2605.03199" class="pub-link" target="_blank" rel="noopener">Paper</a>
+                            <a href="assets/bibtex/khan2026_perfect.txt" class="pub-link" target="_blank" rel="noopener">Bibtex</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="publication-card">
+                    <div class="publication-image">
+                        <img src="assets/paper_figures/quantum_fingerprint.png" alt="Quantum hardware fingerprinting preview">
+                    </div>
+                    <div class="publication-content">
+                        <h3 class="publication-title">Who Ran My Circuit: Calibration Data-Based Fingerprinting of Quantum Cloud Hardware</h3>
+                        <p class="publication-authors">W. Patterson, <strong>Madan Baduwal</strong>, V. Chaudhary</p>
+                        <p class="publication-venue">IEEE International Conference on Computer Communications and Networks (ICCCN), 2026</p>
+                        <p class="publication-description">
+                            A study of whether calibration data can be used to fingerprint quantum cloud hardware and identify which underlying circuit platform executed a workload.
+                        </p>
+                        <div class="publication-links">
+                            <a href="https://madanbaduwal.github.io/publications/" class="pub-link" target="_blank" rel="noopener">Publication</a>
+                            <a href="assets/bibtex/patterson2026_quantum.txt" class="pub-link" target="_blank" rel="noopener">Bibtex</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="publication-card">
+                    <div class="publication-image">
+                        <img src="assets/paper_figures/polyp-segmentation.png" alt="Polyp segmentation preview">
+                    </div>
+                    <div class="publication-content">
+                        <h3 class="publication-title">Hybrid (Transformer+ CNN)-based Polyp Segmentation</h3>
+                        <p class="publication-authors"><strong>Madan Baduwal</strong></p>
+                        <p class="publication-venue">arXiv preprint, 2025</p>
+                        <p class="publication-description">
+                            A medical imaging segmentation pipeline that combines transformer-style context modeling with convolutional detail recovery for more accurate polyp segmentation.
+                        </p>
+                        <div class="publication-links">
+                            <a href="https://arxiv.org/abs/2508.09189" class="pub-link" target="_blank" rel="noopener">Paper</a>
+                            <a href="assets/bibtex/baduwal2025_polyp.txt" class="pub-link" target="_blank" rel="noopener">Bibtex</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="publication-card">
+                    <div class="publication-image">
+                        <img src="assets/paper_figures/Signature-verification.png" alt="Signature verification preview">
+                    </div>
+                    <div class="publication-content">
+                        <h3 class="publication-title">Signature Verification using Convolutional Neural Network and Autoencoder</h3>
+                        <p class="publication-authors">Prakash Ratna Prajapati, Samiksha Poudel, <strong>Madan Baduwal</strong>, Subritt Burlakoti, Sanjeeb Prasad Panday</p>
+                        <p class="publication-venue">Journal of the Institute of Engineering, 2021</p>
+                        <p class="publication-description">
+                            Early published work on writer-dependent signature verification using learned feature extraction with convolutional neural networks and autoencoders.
+                        </p>
+                        <div class="publication-links">
+                            <a href="https://www.researchgate.net/publication/370658396_Signature_Verification_using_Convolutional_Neural_Network_and_Autoencoder" class="pub-link" target="_blank" rel="noopener">Paper</a>
+                            <a href="assets/bibtex/prajapati2021_signature.txt" class="pub-link" target="_blank" rel="noopener">Bibtex</a>
+                            <a href="https://github.com/MadanBaduwal/hastakshar" class="pub-link" target="_blank" rel="noopener">Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pet-projects" class="blogs">
+        <div class="container">
+            <h2 class="section-title">Pet Projects</h2>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="assets/images/blogs/madan/Brain-tumor-segmentation.png" alt="Brain tumor segmentation preview">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">Apr 7, 2024</div>
+                        <h3 class="blog-title">
+                            <a href="projects/brain-tumor-segmentation.html" target="_blank" rel="noopener">Brain Tumor Segmentation</a>
+                        </h3>
+                        <p class="blog-description">
+                            A brain tumor detection and segmentation project using CNN, ResNet50, and U-Net on medical imaging datasets.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="assets/images/blogs/madan/UTPB-Bot.jpg" alt="UTPB Bot preview">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">Mar 7, 2024</div>
+                        <h3 class="blog-title">
+                            <a href="projects/utpb-bot.html" target="_blank" rel="noopener">UTPB Bot</a>
+                        </h3>
+                        <p class="blog-description">
+                            The UTPB chatbot built to answer student, faculty, and staff inquiries using NLP and university resources.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="assets/images/blogs/madan/phishing-detection.jpg" alt="Phishing detection preview">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">May 28, 2023</div>
+                        <h3 class="blog-title">
+                            <a href="projects/phishing-detection.html" target="_blank" rel="noopener">Phishing Detection</a>
+                        </h3>
+                        <p class="blog-description">
+                            A survey and implementation of ML methods for detecting phishing websites and fraudulent URLs.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="assets/images/blogs/madan/robot.png" alt="AI-based autonomous robot preview">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">Jul 21, 2021</div>
+                        <h3 class="blog-title">
+                            <a href="projects/ai-based-autonomous-robot.html" target="_blank" rel="noopener">AI-based autonomous robot</a>
+                        </h3>
+                        <p class="blog-description">
+                            An autonomous robot project using ROS and computer vision for sensing and AI-driven decision-making.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="assets/images/blogs/madan/eye-image.png" alt="AI eye preview">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">Jan 10, 2021</div>
+                        <h3 class="blog-title">
+                            <a href="projects/ai-eye.html" target="_blank" rel="noopener">AI eye</a>
+                        </h3>
+                        <p class="blog-description">
+                            A project combining object detection, face recognition, depth estimation, and tracking into a unified AI vision system.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="assets/images/blogs/madan/Signature-Verification.png" alt="Hastakshar preview">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">Jan 10, 2019</div>
+                        <h3 class="blog-title">
+                            <a href="projects/hastakshar.html" target="_blank" rel="noopener">Hastakshar</a>
+                        </h3>
+                        <p class="blog-description">
+                            A signature verification system exploring CNN-based writer-dependent models for handwritten authentication.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="assets/images/blogs/madan/saveme.jpg" alt="Saveme preview">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">Aug 8, 2017</div>
+                        <h3 class="blog-title">
+                            <a href="projects/saveme.html" target="_blank" rel="noopener">Saveme</a>
+                        </h3>
+                        <p class="blog-description">
+                            A 2D escape game where the player helps a ball representing a prisoner break free from a cage of obstacles.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="assets/images/blogs/madan/Beat-Creator.jpg" alt="Beat Creator preview">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">Apr 4, 2017</div>
+                        <h3 class="blog-title">
+                            <a href="projects/beat-creator.html" target="_blank" rel="noopener">Beat Creator</a>
+                        </h3>
+                        <p class="blog-description">
+                            An Android music app for creating beats using drum, guitar, and piano instruments.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="assets/images/blogs/madan/AntiGravity-Ball.jpg" alt="AntiGravity Ball preview">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">Jan 10, 2017</div>
+                        <h3 class="blog-title">
+                            <a href="projects/antigravity-ball.html" target="_blank" rel="noopener">AntiGravity Ball</a>
+                        </h3>
+                        <p class="blog-description">
+                            A gravity-defying Android game where the player guides a ball downward through obstacles while controlling its movement.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="assets/images/blogs/madan/AstroidSmash.jpg" alt="AstroidSmash project preview">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">Jan 10, 2016</div>
+                        <h3 class="blog-title">
+                            <a href="projects/astroidsmash.html" target="_blank" rel="noopener">AstroidSmash</a>
+                        </h3>
+                        <p class="blog-description">
+                            A mini 2D Android game where you expand the central asteroid and defend it from collisions to score more points.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blogs" class="blogs">
+        <div class="container">
+            <h2 class="section-title">Blogs</h2>
+            <div class="section-block">
+                <div class="blog-grid">
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <img src="assets/images/blogs/madan/covid19-detection-teaser.svg" alt="Covid-19 Detection blog preview">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-date">Dec 22, 2020</div>
+                            <h3 class="blog-title">
+                                <a href="blogs/covid19detection.html" target="_blank" rel="noopener">Covid-19 Detection</a>
+                            </h3>
+                            <p class="blog-description">
+                                A computer vision blog post about classifying COVID-19 chest X-ray images with machine learning.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <img src="assets/images/blogs/madan/python-functions-teaser.svg" alt="Python functions blog preview">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-date">Dec 10, 2020</div>
+                            <h3 class="blog-title">
+                                <a href="blogs/python-functions.html" target="_blank" rel="noopener">Python functions</a>
+                            </h3>
+                            <p class="blog-description">
+                                A tutorial on Python functions covering function basics, arguments, return values, decorators, and generators.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="meeting" class="meeting">
+        <div class="container">
+            <h2 class="section-title">Meeting</h2>
+            <div class="meeting-card">
+                <p class="meeting-intro">
+                    I am always happy to chat with curious and thoughtful people. If you would like to discuss research, projects, collaboration, or related ideas, you can book a time below.
+                </p>
+                <div class="calendly-inline-widget meeting-widget" data-url="https://calendly.com/madanbaduwal/computer-vision-lab"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Madan Baduwal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        const body = document.body;
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const navbar = document.querySelector('.navbar');
+
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        if (currentTheme === 'dark') {
+            body.setAttribute('data-theme', 'dark');
+            themeIcon.classList.replace('fa-moon', 'fa-sun');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            const theme = body.getAttribute('data-theme');
+            if (theme === 'dark') {
+                body.removeAttribute('data-theme');
+                themeIcon.classList.replace('fa-sun', 'fa-moon');
+                localStorage.setItem('theme', 'light');
+            } else {
+                body.setAttribute('data-theme', 'dark');
+                themeIcon.classList.replace('fa-moon', 'fa-sun');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        navLinks.forEach((link) => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

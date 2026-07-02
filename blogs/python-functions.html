@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover everything about Python functions, starting from the basics of what a function is to advanced topics like decorators and generators.">
+    <meta name="author" content="Madan Baduwal">
+    <title>Python functions - Madan Baduwal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../blog-style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../" class="nav-brand">Madan Baduwal</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="../#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="../#research" class="nav-link">Research</a></li>
+                <li class="nav-item"><a href="../#pet-projects" class="nav-link">Pet Projects</a></li>
+                <li class="nav-item"><a href="../#blogs" class="nav-link">Blogs</a></li>
+                <li class="nav-item"><a href="../assets/cv.pdf" class="nav-link" target="_blank" rel="noopener">CV</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon" id="theme-icon"></i>
+            </button>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="blog-container">
+        <a href="../#blogs" class="back-button">
+            <i class="fas fa-arrow-left"></i>
+            Back to Blogs
+        </a>
+
+        <header class="blog-header">
+            <h1 class="blog-title">Python functions</h1>
+            <p class="project-subtitle">🐍 Discover everything about Python functions, starting from the basics of what a function is to advanced topics like decorators and generators.</p>
+            <div class="blog-meta">
+                <div class="blog-date">
+                    <i class="fas fa-calendar"></i>
+                    December 10, 2020
+                </div>
+            </div>
+            <div class="blog-tags">
+                <span class="blog-tag">Python</span>
+                <span class="blog-tag">Functions</span>
+                <span class="blog-tag">Tutorial</span>
+            </div>
+        </header>
+
+        <article class="blog-content">
+            <p>In these lessons, we'll cover the fundamentals of Python functions. A function is a series of statements that executes a specific task, helping to reduce code duplication. Throughout the course, we'll explore various types of functions, as illustrated in the figure below:</p>
+            <table>
+                <thead>
+                    <tr class="header">
+                        <th style="text-align: center;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0JJDfw3M0rv71W3l56rYpC71mtMBfnZwth7oVSMK2cNwzj1xKaOJPf9uN9ZvkDUzW0GA&amp;usqp=CAU" alt="Type of Functions in Python"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="odd">
+                        <td style="text-align: center;"><em>Type of Functions in Python: <a href="https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/sites/2/2018/01/Python-Functions.jpg" target="_blank" rel="noopener">Source</a></em></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>Before starting the function we need to recall the function name, arguments, and parameters.</p>
+            <pre class="python"><code>def function_name(parameters):
+  statement
+  statement
+  ...
+  return value
+
+return_value = function_name(arguments)
+</code></pre>
+
+            <h2>Defining Function</h2>
+            <p>We can define a function with the <code>def</code> keyword.</p>
+            <pre class="python"><code>def print_hello():
+  print(f"Hello")
+
+print_hello()
+
+&gt;&gt;&gt; Hello
+</code></pre>
+
+            <h3>More on defining function</h3>
+            <p>We can define a function with a variable number of arguments.</p>
+
+            <h4>Default Argument Values</h4>
+            <pre class="python"><code># Defining function with default arguments
+def sum(x , y=2, z=3):
+  print(f"Sum of x, y, and z is:{x+y+z}")
+</code></pre>
+
+            <p>Calling a function in different ways:</p>
+            <pre class="python"><code># giving only the mendatory argument
+sum(1)
+&gt;&gt;&gt; Sum of x, y, and z is:6
+</code></pre>
+            <pre class="python"><code># Giving one of the option arguments
+sum(3,4)
+&gt;&gt;&gt; Sum of x, y, and z is:10
+</code></pre>
+            <pre class="python"><code># Giving all arguments
+sum(3,4,5)
+&gt;&gt;&gt; Sum of x, y, and z is:12
+</code></pre>
+
+            <p>Note1: The default values are evaluated at the point of function definition in the defining scope, so that</p>
+            <pre class="python"><code>a = 10
+# The default value for variable arg is set at the time of function definition
+def function(arg=a):
+  print(arg)
+
+a = 15
+function()
+&gt;&gt;&gt; 10
+</code></pre>
+
+            <p>Note2: The default value is evaluated only once. This makes a difference when the default is a mutable object such as a list, dictionary, or instances of most classes. For example, the following function accumulates the arguments passed to it on subsequent calls:</p>
+            <pre class="python"><code># The default value is evaluated only once but in the case of mutable(list, dictionary...) we can evaluate many times.
+def append(a,L={}):
+  L[a]=a
+  return L
+
+print(append(1))
+print(append(2))
+print(append(3))
+
+&gt;&gt;&gt; {1: 1}
+&gt;&gt;&gt; {1: 1, 2: 2}
+&gt;&gt;&gt; {1: 1, 2: 2, 3: 3}
+</code></pre>
+
+            <ul>
+                <li>Note: Order matters while calling in a default-argument-values function.</li>
+            </ul>
+
+            <h4>Keyword Arguments</h4>
+            <p>Functions can also be called using keyword arguments of the form <code>kwarg=value</code>. For instance, the following function:</p>
+            <pre class="python"><code>def add(x,y=2,z=3):
+  print(f"Sum of x, y, and z is:{x+y+z}")
+</code></pre>
+
+            <p>Calling a function in different ways:</p>
+            <pre class="python"><code>add(1)
+&gt;&gt;&gt; Sum of x, y, and z is:6
+</code></pre>
+            <pre class="python"><code>add(x=2)
+&gt;&gt;&gt; Sum of x, y, and z is:7
+</code></pre>
+            <pre class="python"><code>add(x=2,y=4)
+&gt;&gt;&gt; Sum of x, y, and z is:9
+</code></pre>
+            <pre class="python"><code>add(1,2,3)
+&gt;&gt;&gt; Sum of x, y, and z is:6
+</code></pre>
+            <pre class="python"><code>add(1,2,z=8)
+&gt;&gt;&gt; Sum of x, y, and z is:11
+</code></pre>
+
+            <p>But some following calls are invalid:</p>
+            <pre class="python"><code>add()
+&gt;&gt;&gt; -
+TypeError                                 Traceback (most recent call last)
+&lt;ipython-input-33-d5d29de3ed94&gt; in &lt;module&gt;()
+----&gt; 1 add()
+
+TypeError: add() missing 1 required positional argument: 'x'
+</code></pre>
+            <pre class="python"><code>add(x=1,2)
+&gt;&gt;&gt; File "&lt;ipython-input-34-ea0ca97f0446&gt;", line 1
+    add(x=1,2)
+           ^
+SyntaxError: positional argument follows keyword argument
+</code></pre>
+            <pre class="python"><code>add(5,x=2)
+&gt;&gt;&gt; -
+TypeError                                 Traceback (most recent call last)
+&lt;ipython-input-37-cf0a26e4ab05&gt; in &lt;module&gt;()
+----&gt; 1 add(5,x=2)
+
+TypeError: add() got multiple values for argument 'x'
+</code></pre>
+            <pre class="python"><code>add(k=2)
+&gt;&gt;&gt; -
+TypeError                                 Traceback (most recent call last)
+&lt;ipython-input-38-4063630c747d&gt; in &lt;module&gt;()
+----&gt; 1 add(k=2)
+
+TypeError: add() got an unexpected keyword argument 'k'
+</code></pre>
+
+            <h4>Special parameters</h4>
+            <p>Developer needs only look at the function definition to determine if items are passed by position, by position or keyword, or by keyword.</p>
+            <p>A function definition may look like:</p>
+            <pre class="python"><code>def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):
+      -----------    ----------     ----------
+        |             |                  |
+        |        Positional or keyword   |
+        |                                - Keyword only
+         -- Positional only
+</code></pre>
+
+            <p>where <code>/</code> and <code>*</code> are optional. If used, these symbols indicate the kind of parameter by how the arguments may be passed to the function: positional-only, positional-or-keyword, and keyword-only. Keyword parameters are also referred to as named parameters.</p>
+
+            <h5>Positional-or-Keyword Arguments</h5>
+            <p>If <code>/</code> and <code>*</code> are not present in the function definition, arguments may be passed to a function by position or by keyword.</p>
+
+            <h5>Positional-Only Parameters</h5>
+            <pre class="python"><code>def f(pos1, pos2, /):
+      -----------    ----------     ----------
+        |
+         -- Positional only
+</code></pre>
+            <pre class="python"><code>def pos_only_arg(arg,/):
+  print(arg)
+</code></pre>
+            <p>Note: position only support Python 3.8.</p>
+            <pre class="python"><code>pos_only_arg(1)
+&gt;&gt;&gt; 1
+
+pos_only_arg(arg=1)
+&gt;&gt;&gt; Traceback (most recent call last):
+  File "&lt;stdin&gt;", line 1, in &lt;module&gt;
+TypeError: pos_only_arg() got an unexpected keyword argument 'arg'
+</code></pre>
+
+            <h5>Keyword-Only Parameters</h5>
+            <pre class="python"><code>def kwd_only_arg(*, arg):
+    print(arg)
+</code></pre>
+            <pre class="python"><code>kwd_only_arg(3)
+&gt;&gt;&gt; -
+TypeError                                 Traceback (most recent call last)
+&lt;ipython-input-8-896c53ef896c&gt; in &lt;module&gt;()
+----&gt; 1 kwd_only_arg(3)
+
+TypeError: kwd_only_arg() takes 0 positional arguments but 1 was given
+</code></pre>
+            <pre class="python"><code>kwd_only_arg(arg=3)
+&gt;&gt;&gt; 3
+</code></pre>
+
+            <h4>Arbitrary Argument</h4>
+            <p>Function can be called with an arbitrary number of arguments.</p>
+
+            <h5>Arbitrary Argument tuples</h5>
+            <pre class="python"><code>def arbitrary_argument(*args):
+  return args
+</code></pre>
+            <pre class="python"><code>print(arbitrary_argument("hi","iam","madan"))
+
+&gt;&gt;&gt; ('hi', 'iam', 'madan')
+</code></pre>
+            <p>Note: From above we can see that arguments are wrapped up in a tuple.</p>
+
+            <h5>Arbitrary Argument lists</h5>
+            <pre class="python"><code>def arbitrary_argument(*args):
+  L = list(args)
+  return L
+</code></pre>
+            <pre class="python"><code>print(arbitrary_argument("hi","iam","madan"))
+&gt;&gt;&gt; ['hi', 'iam', 'madan']
+</code></pre>
+
+            <h5>Arbitrary Argument dictionaries</h5>
+            <p>In the same fashion, dictionaries can deliver keyword arguments with the <code>**</code> operator:</p>
+            <pre class="python"><code>def arbitrary_argument(**args):
+  return args
+</code></pre>
+            <pre class="python"><code>print(arbitrary_argument(hi="hi",iam="iam",Madan="Madan"))
+&gt;&gt;&gt; {'hi': 'hi', 'iam': 'iam', 'Madan': 'Madan'}
+</code></pre>
+            <p>Note: for dictionaries we need to pass <code>"key":"value"</code> into <code>key="value"</code> format.</p>
+
+            <h4>Lambda Expressions</h4>
+            <p>Small anonymous functions can be created with the <code>lambda</code> keyword.</p>
+            <ul>
+                <li><code>lambda arguments : expression</code></li>
+            </ul>
+
+            <p><strong>Arguments:</strong></p>
+            <p>-Positional arguments</p>
+            <p>-Named arguments (sometimes called keyword arguments)</p>
+            <p>-Variable list of arguments (often referred to as varargs)</p>
+            <p>-Variable list of keyword arguments</p>
+            <p>-Keyword-only arguments</p>
+
+            <pre class="python"><code>lambda a,b:a+b
+&gt;&gt;&gt; &lt;function __main__.&lt;lambda&gt;&gt;
+</code></pre>
+            <p>calling lambda function</p>
+            <pre class="python"><code>_(1,2) # Note _ call recent run things
+&gt;&gt;&gt; 3
+</code></pre>
+            <pre class="python"><code>_ #last output value
+&gt;&gt;&gt; 3
+</code></pre>
+            <pre class="python"><code>(lambda a,b:a*b)(2,3) # call lambda function
+&gt;&gt;&gt; 6
+</code></pre>
+            <pre class="python"><code>divide = lambda a,b: a/b
+
+divide(4,2) # calling lambda function
+&gt;&gt;&gt; 2.0
+</code></pre>
+
+            <h4>Recursion</h4>
+            <p>We can make a function call itself. This is known as recursion.</p>
+            <pre class="python"><code>def facto(n):
+  if n==1:
+    return 1
+  return n*facto(n-1)
+</code></pre>
+            <pre class="python"><code>facto(5)
+&gt;&gt;&gt; 120
+</code></pre>
+            <p>How does it work?</p>
+            <p>We already know the return keyword return value.</p>
+            <p>first step: value = 5*facto(4)</p>
+            <p>second step: value = 5* 4 * facto(3)</p>
+            <p>third step: value = 5* 4* 3 * facto(2)</p>
+            <p>fourth step: value = 5 * 4 * 3 * 2 *facto(1)</p>
+            <p>fifth step: value = 5 * 4 * 3 * 2 * 1</p>
+
+            <h4>Decorators</h4>
+            <p>Decorators are very powerful and useful tool in Python since it allows programmers to modify the behavior of function or class.</p>
+            <pre class="python"><code>def uppercase_decorator(function): # Pass function as an argument
+    def wrapper():
+        func = function()
+        make_uppercase = func.upper()
+        return make_uppercase # return function as value
+
+    return wrapper # return function as value
+</code></pre>
+            <p>Our decorator function takes a function as an argument, and we shall, therefore, define a function and pass it to our decorator.</p>
+            <pre class="python"><code>def say_hi():
+    return 'hello there'
+
+decorate = uppercase_decorator(say_hi)
+decorate()
+&gt;&gt;&gt; HELLO THERE
+</code></pre>
+            <p>However, Python provides a much easier way for us to apply decorators. We simply use the <code>@</code> symbol before the function we'd like to decorate.</p>
+            <pre class="python"><code>@uppercase_decorator
+def say_hi():
+    return 'hello there'
+
+say_hi()
+&gt;&gt;&gt; HELLO THERE
+</code></pre>
+
+            <h4>Generator functions and yield</h4>
+            <p>Consider this simple function which returns a range of numbers as a list:</p>
+            <pre class="python"><code>def my_list(n):
+    i = 0
+    l = []
+
+    while i &lt; n:
+        l.append(i)
+        i += 1
+
+    return l
+</code></pre>
+            <p>This function builds the full list of numbers and returns it. We can change this function into a generator function while preserving a very similar syntax, like this:</p>
+            <pre class="python"><code>def my_gen(n):
+    i = 0
+
+    while i &lt; n:
+        yield i  # Yield le value return gardain, state return garxa
+        i += 1
+</code></pre>
+            <pre class="python"><code>my_gen(3)
+&gt;&gt;&gt; &lt;generator object my_gen at 0x7f06035b3c50&gt;
+</code></pre>
+            <p>From above we can say that the <code>yield</code> statement suspends a function's execution and sends a value back to the caller, but retains enough state to enable the function to resume where it is left off.</p>
+            <pre class="python"><code>g = my_gen(3)
+
+print(type(g))
+
+for x in g:
+    print(x)
+
+&gt;&gt;&gt;  &lt;class 'generator'&gt;
+0
+1
+2
+</code></pre>
+
+            <p>How does the <code>yield</code> keyword work?</p>
+            <ul>
+                <li>After the <code>yield</code> statement is executed, execution of the function does not end. When the next value is requested from the generator, it goes back to the function and executes it again.</li>
+                <li>The <code>yield</code> keyword in Python works like a <code>return</code> with the difference that instead of returning a value, it gives back a generator object to the caller.</li>
+            </ul>
+
+            <h4>Documentation Strings</h4>
+            <pre class="python"><code>def my_function():
+    """Do nothing, but document it.          # First latter capital and end with period
+                                             # Second line is blank if there is multiple line for documentation string.
+     No, really, it doesn't do anything.     # Indentation determine by first line open quote
+     """
+    pass
+</code></pre>
+            <pre class="python"><code>print(my_function.__doc__)
+
+&gt;&gt;&gt; Do nothing, but document it.         # first latter capital and end with period
+                                            # second line is blank if there is multiple line for documentation string.
+     No, really, it doesn't do anything.     # indentation determine by first line open quote
+</code></pre>
+
+            <h4>Callback Function</h4>
+            <p><strong>What is a Callback Function?</strong></p>
+            <p>A callback is a function that is passed as an argument to another function. This other function is expected to call this callback function in its definition. The point at which another function calls our callback function depends on the requirement and nature of the function.</p>
+            <p>Callback functions are generally used with asynchronous functions.</p>
+            <p>Example for Callback Function: a callback function can be passed to a function to print out the size of a file after the function reads the given text file.</p>
+            <pre class="python"><code>def callbackFunc(s):
+    print('Length of the text file is : ', s)
+
+def printFileLength(path, callback):
+    f = open(path, "r")
+    length = len(f.read())
+    f.close()
+    callback(length)
+</code></pre>
+            <pre class="python"><code>printFileLength("test.txt", callbackFunc)
+
+&gt;&gt;&gt; Output : Length of the text file is : 40
+</code></pre>
+
+            <h4>Function Annotations</h4>
+            <pre class="python"><code>def bio(name: str, address: str='address')-&gt;str: # colon (:) paxiko annotation ho and -&gt; paxiko return type janauna
+  print("ANnotation",bio.__annotations__)
+  return 'and'+address
+</code></pre>
+            <pre class="python"><code>bio(10)
+&gt;&gt;&gt; ANnotation {'name': &lt;class 'str'&gt;, 'address': &lt;class 'str'&gt;, 'return': &lt;class 'str'&gt;}
+'andaddress'
+</code></pre>
+
+            <h1>References</h1>
+            <ul>
+                <li><a href="https://python-textbok.readthedocs.io/en/1.0/" target="_blank" rel="noopener">Readthedocs</a></li>
+                <li><a href="https://realpython.com/python3-object-oriented-programming/" target="_blank" rel="noopener">Realpython</a></li>
+            </ul>
+        </article>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Madan Baduwal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        const body = document.body;
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const navbar = document.querySelector('.navbar');
+
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        if (currentTheme === 'dark') {
+            body.setAttribute('data-theme', 'dark');
+            themeIcon.classList.replace('fa-moon', 'fa-sun');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            const theme = body.getAttribute('data-theme');
+            if (theme === 'dark') {
+                body.removeAttribute('data-theme');
+                themeIcon.classList.replace('fa-sun', 'fa-moon');
+                localStorage.setItem('theme', 'light');
+            } else {
+                body.setAttribute('data-theme', 'dark');
+                themeIcon.classList.replace('fa-moon', 'fa-sun');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+
+        navLinks.forEach((link) => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

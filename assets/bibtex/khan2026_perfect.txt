@@ -1,0 +1,7 @@
+@inproceedings{khan2026perfect,
+  author    = {S. U. Khan and Madan Baduwal and V. Chaudhary and D. Roy},
+  title     = {PERFECT: Personalized Federated Learning for CBRS Radar Detection},
+  booktitle = {Proceedings of the IEEE International Conference on Computer Communications and Networks (ICCCN)},
+  year      = {2026},
+  publisher = {IEEE}
+}

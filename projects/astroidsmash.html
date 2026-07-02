@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstroidSmash - Madan Baduwal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../blog-style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../" class="nav-brand">Madan Baduwal</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="../#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="../#research" class="nav-link">Research</a></li>
+                <li class="nav-item"><a href="../#pet-projects" class="nav-link">Pet Projects</a></li>
+                <li class="nav-item"><a href="../#blogs" class="nav-link">Blogs</a></li>
+                <li class="nav-item"><a href="../assets/cv.pdf" class="nav-link" target="_blank" rel="noopener">CV</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon" id="theme-icon"></i>
+            </button>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="blog-container">
+        <a href="../#pet-projects" class="back-link back-button"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+        
+        <div class="project-header blog-header">
+            <h1>AstroidSmash</h1>
+            <p class="project-subtitle">✨ AstroidSmash is a mini captivating 2D Android game where your objective is to expand the central asteroid's size by safeguarding it against collisions with other asteroids, thereby earning higher scores.</p>
+        </div>
+        
+        <article class="project-content blog-content">
+            <img src="../assets/images/blogs/madan/AstroidSmash.jpg" alt="AstroidSmash" class="project-image">
+            
+            <p>AstroidSmash is a mini captivating 2D game developed using the Unity game engine, centered around the theme of the universe. In this immersive experience, players are tasked with defending our planet from various threats, including a supernova, incoming asteroids, and an alien invasion.</p>
+
+            <p>The focal point of the game is our central asteroid, which players must strategically expand by colliding it with asteroids of the same color. Additionally, players have the ability to swap adjacent asteroids (excluding the central one) to further increase its size while eliminating asteroids of different colors. The game offers customization options such as adjusting the force and spawn rate to enhance gameplay dynamics.</p>
+
+            <p>Implementing advanced mechanics, the game employs Reinforcement Learning for the alien ship, an enemy entity programmed to target and destroy our asteroid while also defending itself.</p>
+
+            <p>To gauge the health of our asteroid, a stress meter is provided, with players initially equipped with 98 shields for protection and another 98 life points to bolster the asteroid's size.</p>
+
+            <div class="embed-responsive">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/4NxQOkgr2Zw" allowfullscreen autoplay></iframe>
+            </div>
+
+            <p><strong>Download app from here:</strong> <a href="https://drive.google.com/file/d/1bKXiCgcp6sbDpM1nbGj7XEGBrHlQKJmU/view?usp=sharing" class="project-link" target="_blank" rel="noopener">Download</a></p>
+        </article>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Madan Baduwal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        const body = document.body;
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const navbar = document.querySelector('.navbar');
+
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        if (currentTheme === 'dark') {
+            body.setAttribute('data-theme', 'dark');
+            themeIcon.classList.replace('fa-moon', 'fa-sun');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            const theme = body.getAttribute('data-theme');
+            if (theme === 'dark') {
+                body.removeAttribute('data-theme');
+                themeIcon.classList.replace('fa-sun', 'fa-moon');
+                localStorage.setItem('theme', 'light');
+            } else {
+                body.setAttribute('data-theme', 'dark');
+                themeIcon.classList.replace('fa-moon', 'fa-sun');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                if (link.getAttribute('href').startsWith('#')) {
+                    navMenu.classList.remove('active');
+                    hamburger.classList.remove('active');
+                }
+            });
+        });
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+            } else {
+                navbar.style.boxShadow = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Detection - Madan Baduwal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../blog-style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../" class="nav-brand">Madan Baduwal</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="../#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="../#research" class="nav-link">Research</a></li>
+                <li class="nav-item"><a href="../#pet-projects" class="nav-link">Pet Projects</a></li>
+                <li class="nav-item"><a href="../#blogs" class="nav-link">Blogs</a></li>
+                <li class="nav-item"><a href="../assets/cv.pdf" class="nav-link" target="_blank" rel="noopener">CV</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon" id="theme-icon"></i>
+            </button>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="blog-container">
+        <a href="../#pet-projects" class="back-link back-button"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+        
+        <div class="project-header blog-header">
+            <h1>Phishing Detection</h1>
+            <p class="project-subtitle">🕵️ Phishing detection using machine learning and URLs involves leveraging algorithms to analyze website URLs for signs of fraudulent activity.</p>
+        </div>
+        
+        <article class="project-content blog-content">
+            <img src="../assets/images/blogs/madan/phishing-detection.jpg" alt="Phishing Detection" class="project-image">
+            
+            <p>Phishing attacks remain a significant security concern for both individuals and organizations, resulting in billions of dollars in losses annually. Machine learning (ML) has emerged as a promising approach for detecting such attacks by analyzing patterns and anomalies within large datasets. However, achieving an optimal balance between feature selection and model selection poses a challenging task in ML for phishing detection.</p>
+
+            <p>Traditional ML algorithms such as Logistic Regression (LR), Support Vector Machine (SVM), Random Forest (RF), XGBoost, and Naive Bayes (NB) often struggle with a low number of features, limiting their generalizability. Additionally, deep learning (DL) algorithms face difficulties in learning features from ambiguous behaviors between phishing and non-phishing websites.</p>
+
+            <p>This paper provides a comprehensive survey of various ML techniques and paradigms utilized for phishing website detection. It explores different datasets, features, and parameters within algorithms, along with the training time-space complexity involved in phishing detection. Furthermore, the survey compares the accuracies of different ML techniques.</p>
+
+            <p>The findings of this survey offer valuable insights into the current state of the art in phishing detection and can serve as a valuable resource for researchers and practitioners in the field.</p>
+
+            <div class="embed-responsive">
+                <iframe src="https://www.youtube.com/embed/_Tv3nT6WqzU?si=M_WtvmAR24qvgg8R" title="Phishing Detection demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+            <h2>Run Project</h2>
+            <p>The GitHub repository can also be found here:</p>
+            <p><a href="https://github.com/madanbaduwal/phishing-detection-transformer" class="project-link" target="_blank" rel="noopener">View Repository</a></p>
+
+            <pre><code>cd phishing-detection-transformer
+cd src
+
+pip3 install -r requirements.txt
+
+streamlit run app.py</code></pre>
+        </article>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Madan Baduwal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        const body = document.body;
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const navbar = document.querySelector('.navbar');
+
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        if (currentTheme === 'dark') {
+            body.setAttribute('data-theme', 'dark');
+            themeIcon.classList.replace('fa-moon', 'fa-sun');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            const theme = body.getAttribute('data-theme');
+            if (theme === 'dark') {
+                body.removeAttribute('data-theme');
+                themeIcon.classList.replace('fa-sun', 'fa-moon');
+                localStorage.setItem('theme', 'light');
+            } else {
+                body.setAttribute('data-theme', 'dark');
+                themeIcon.classList.replace('fa-moon', 'fa-sun');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                if (link.getAttribute('href').startsWith('#')) {
+                    navMenu.classList.remove('active');
+                    hamburger.classList.remove('active');
+                }
+            });
+        });
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+            } else {
+                navbar.style.boxShadow = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

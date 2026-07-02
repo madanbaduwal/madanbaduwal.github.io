@@ -1,0 +1,75 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="80" x2="1080" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="260" y1="180" x2="930" y2="650" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111827"/>
+      <stop offset="1" stop-color="#1F2937"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="264" y1="185" x2="933" y2="650" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#A855F7"/>
+    </linearGradient>
+    <filter id="shadow" x="207" y="147" width="786" height="539" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="18"/>
+      <feGaussianBlur stdDeviation="18"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.0313726 0 0 0 0 0.0588235 0 0 0 0 0.117647 0 0 0 0.35 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_1"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_1" result="shape"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <circle cx="180" cy="154" r="90" fill="#38BDF8" fill-opacity="0.08"/>
+  <circle cx="1022" cy="648" r="144" fill="#A855F7" fill-opacity="0.08"/>
+  <circle cx="110" cy="620" r="52" fill="#22C55E" fill-opacity="0.1"/>
+
+  <text x="110" y="140" fill="#E2E8F0" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700">Python Functions</text>
+  <text x="110" y="182" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="22">def, args, lambda, decorators, generators</text>
+
+  <g filter="url(#shadow)">
+    <rect x="243" y="165" width="714" height="467" rx="26" fill="url(#panel)"/>
+    <rect x="243" y="165" width="714" height="467" rx="26" stroke="url(#accent)" stroke-width="2"/>
+    <rect x="243" y="165" width="714" height="56" rx="26" fill="#0B1220"/>
+    <circle cx="282" cy="193" r="9" fill="#FB7185"/>
+    <circle cx="313" cy="193" r="9" fill="#FBBF24"/>
+    <circle cx="344" cy="193" r="9" fill="#34D399"/>
+    <text x="392" y="201" fill="#94A3B8" font-family="JetBrains Mono, monospace" font-size="20">python_functions.py</text>
+  </g>
+
+  <text x="290" y="285" fill="#C084FC" font-family="JetBrains Mono, monospace" font-size="30">def</text>
+  <text x="350" y="285" fill="#E2E8F0" font-family="JetBrains Mono, monospace" font-size="30">greet</text>
+  <text x="434" y="285" fill="#F8FAFC" font-family="JetBrains Mono, monospace" font-size="30">(</text>
+  <text x="452" y="285" fill="#67E8F9" font-family="JetBrains Mono, monospace" font-size="30">name</text>
+  <text x="523" y="285" fill="#F8FAFC" font-family="JetBrains Mono, monospace" font-size="30">,</text>
+  <text x="545" y="285" fill="#67E8F9" font-family="JetBrains Mono, monospace" font-size="30">punctuation</text>
+  <text x="730" y="285" fill="#F8FAFC" font-family="JetBrains Mono, monospace" font-size="30">=</text>
+  <text x="760" y="285" fill="#FDE68A" font-family="JetBrains Mono, monospace" font-size="30">"!"</text>
+  <text x="804" y="285" fill="#F8FAFC" font-family="JetBrains Mono, monospace" font-size="30">):</text>
+
+  <text x="320" y="340" fill="#94A3B8" font-family="JetBrains Mono, monospace" font-size="27">@trace</text>
+  <text x="320" y="393" fill="#E2E8F0" font-family="JetBrains Mono, monospace" font-size="27">message =</text>
+  <text x="474" y="393" fill="#FDE68A" font-family="JetBrains Mono, monospace" font-size="27">f"Hello {name}{punctuation}"</text>
+  <text x="320" y="446" fill="#E2E8F0" font-family="JetBrains Mono, monospace" font-size="27">transform =</text>
+  <text x="506" y="446" fill="#C084FC" font-family="JetBrains Mono, monospace" font-size="27">lambda</text>
+  <text x="612" y="446" fill="#67E8F9" font-family="JetBrains Mono, monospace" font-size="27">text</text>
+  <text x="677" y="446" fill="#F8FAFC" font-family="JetBrains Mono, monospace" font-size="27">:</text>
+  <text x="699" y="446" fill="#E2E8F0" font-family="JetBrains Mono, monospace" font-size="27">text.upper()</text>
+  <text x="320" y="499" fill="#C084FC" font-family="JetBrains Mono, monospace" font-size="27">yield</text>
+  <text x="405" y="499" fill="#E2E8F0" font-family="JetBrains Mono, monospace" font-size="27">transform(message)</text>
+
+  <rect x="764" y="348" width="138" height="138" rx="24" fill="#0F172A" stroke="#334155" stroke-width="2"/>
+  <path d="M813 387C813 360.49 834.49 339 861 339V339C887.51 339 909 360.49 909 387V442H813V387Z" fill="#2563EB"/>
+  <circle cx="845" cy="394" r="13" fill="#F8FAFC"/>
+  <circle cx="877" cy="394" r="13" fill="#F8FAFC"/>
+  <circle cx="845" cy="394" r="5" fill="#0F172A"/>
+  <circle cx="877" cy="394" r="5" fill="#0F172A"/>
+  <path d="M842 424C851 433 870 433 880 424" stroke="#F8FAFC" stroke-width="6" stroke-linecap="round"/>
+
+  <text x="276" y="585" fill="#22C55E" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="600">return clean, reusable code</text>
+</svg>

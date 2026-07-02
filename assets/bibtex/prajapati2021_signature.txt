@@ -1,0 +1,9 @@
+@article{prajapati2021signature,
+  title={Signature Verification using Convolutional Neural Network and Autoencoder},
+  author={Prajapati, Prakash Ratna and Poudel, Samiksha and Baduwal, Madan and Burlakoti, Subritt and Panday, Sanjeeb Prasad},
+  journal={Journal of the Institute of Engineering},
+  volume={16},
+  number={1},
+  year={2021},
+  url={https://www.researchgate.net/publication/370658396_Signature_Verification_using_Convolutional_Neural_Network_and_Autoencoder}
+}

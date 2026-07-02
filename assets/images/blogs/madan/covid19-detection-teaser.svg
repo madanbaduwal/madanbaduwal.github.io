@@ -1,0 +1,68 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="95" y1="90" x2="1110" y2="710" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#071A26"/>
+      <stop offset="1" stop-color="#0F2D3A"/>
+    </linearGradient>
+    <linearGradient id="scan" x1="240" y1="170" x2="960" y2="640" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B2532"/>
+      <stop offset="1" stop-color="#12384A"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="270" y1="150" x2="950" y2="650" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#10B981"/>
+    </linearGradient>
+    <filter id="shadow" x="205" y="137" width="790" height="552" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="18"/>
+      <feGaussianBlur stdDeviation="18"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.0235294 0 0 0 0 0.0862745 0 0 0 0 0.121569 0 0 0 0.4 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_1"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_1" result="shape"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <circle cx="150" cy="170" r="94" fill="#22D3EE" fill-opacity="0.1"/>
+  <circle cx="1030" cy="135" r="72" fill="#10B981" fill-opacity="0.1"/>
+  <circle cx="1025" cy="635" r="128" fill="#22D3EE" fill-opacity="0.08"/>
+
+  <text x="104" y="136" fill="#E6FFFB" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700">Covid-19 Detection</text>
+  <text x="104" y="178" fill="#9DD8E5" font-family="Inter, Arial, sans-serif" font-size="22">CNN-based chest X-ray screening and classification</text>
+
+  <g filter="url(#shadow)">
+    <rect x="241" y="165" width="718" height="480" rx="28" fill="url(#scan)"/>
+    <rect x="241" y="165" width="718" height="480" rx="28" stroke="url(#glow)" stroke-width="2"/>
+  </g>
+
+  <rect x="292" y="214" width="310" height="382" rx="28" fill="#08161F" stroke="#1D4F5F" stroke-width="2"/>
+  <path d="M447 268C494 268 530 303 530 353V486C530 534 494 570 447 570C400 570 364 534 364 486V353C364 303 400 268 447 268Z" fill="#0E2430"/>
+  <path d="M417 329C390 347 373 379 373 418C373 472 406 516 447 516C488 516 521 472 521 418C521 379 504 347 477 329" stroke="#D4F7FF" stroke-opacity="0.85" stroke-width="13" stroke-linecap="round"/>
+  <path d="M447 308V527" stroke="#5EEAD4" stroke-opacity="0.6" stroke-width="5"/>
+  <path d="M412 401C402 430 401 464 412 497" stroke="#9AE6FF" stroke-opacity="0.8" stroke-width="8" stroke-linecap="round"/>
+  <path d="M482 401C492 430 493 464 482 497" stroke="#9AE6FF" stroke-opacity="0.8" stroke-width="8" stroke-linecap="round"/>
+  <path d="M401 354C421 336 473 336 493 354" stroke="#9AE6FF" stroke-opacity="0.7" stroke-width="8" stroke-linecap="round"/>
+
+  <rect x="654" y="226" width="253" height="128" rx="22" fill="#0A1A23" stroke="#1D4F5F" stroke-width="2"/>
+  <text x="688" y="269" fill="#9DD8E5" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="600">Model Output</text>
+  <text x="688" y="315" fill="#E6FFFB" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="700">COVID-19</text>
+  <text x="843" y="315" fill="#34D399" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="700">92%</text>
+
+  <rect x="654" y="386" width="253" height="160" rx="22" fill="#0A1A23" stroke="#1D4F5F" stroke-width="2"/>
+  <text x="688" y="429" fill="#9DD8E5" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="600">Feature Map</text>
+  <rect x="689" y="450" width="185" height="14" rx="7" fill="#123949"/>
+  <rect x="689" y="450" width="148" height="14" rx="7" fill="#22D3EE"/>
+  <rect x="689" y="481" width="185" height="14" rx="7" fill="#123949"/>
+  <rect x="689" y="481" width="126" height="14" rx="7" fill="#10B981"/>
+  <rect x="689" y="512" width="185" height="14" rx="7" fill="#123949"/>
+  <rect x="689" y="512" width="162" height="14" rx="7" fill="#67E8F9"/>
+
+  <circle cx="570" cy="275" r="14" fill="#22D3EE"/>
+  <circle cx="612" cy="307" r="10" fill="#10B981"/>
+  <circle cx="571" cy="336" r="7" fill="#9AE6FF"/>
+  <path d="M571 275L612 307L571 336" stroke="#5EEAD4" stroke-width="4"/>
+
+  <text x="278" y="616" fill="#9DD8E5" font-family="Inter, Arial, sans-serif" font-size="18">Chest X-ray analysis with data augmentation, VGG16, and evaluation metrics</text>
+</svg>
